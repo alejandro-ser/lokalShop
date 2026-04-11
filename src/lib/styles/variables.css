@@ -1,0 +1,137 @@
+/* ═══════════════════════════════════════════
+   DEFAULT THEME (VIOLET AURORA)
+   ═══════════════════════════════════════════ */
+:root,
+[data-theme='default'] {
+	/* ── Surface & Background ── */
+	--bg: oklch(0.98 0.005 260);
+	--bg-secondary: oklch(0.95 0.008 260);
+	--surface: oklch(1 0 0);
+	--text: oklch(0.2 0.02 260);
+	--text-muted: oklch(0.5 0.015 260);
+	--border: oklch(0.9 0.01 260);
+
+	/* ── Glass ── */
+	--glass-bg: oklch(1 0 0 / 0.65);
+	--glass-border: oklch(1 0 0 / 0.3);
+	--glass-blur: 16px;
+
+	/* ── Aurora Accents (HIGH CHROMA) ── */
+	--accent-1: oklch(0.65 0.28 280);
+	--accent-2: oklch(0.7 0.24 190);
+	--accent-3: oklch(0.68 0.26 340);
+
+	/* ── Semantic ── */
+	--success: oklch(0.72 0.19 145);
+	--warning: oklch(0.8 0.18 80);
+	--danger: oklch(0.65 0.24 25);
+
+	/* ── Organic Shadows (accent-tinted) ── */
+	--shadow-sm: 0 1px 3px oklch(0.4 0.08 280 / 0.08);
+	--shadow-md: 0 4px 14px oklch(0.35 0.12 280 / 0.1), 0 2px 4px oklch(0.2 0 0 / 0.04);
+	--shadow-lg: 0 8px 32px oklch(0.35 0.14 280 / 0.14), 0 2px 8px oklch(0.2 0 0 / 0.05);
+	--shadow-glow: 0 0 48px oklch(0.65 0.28 280 / 0.25);
+}
+
+/* ═══════════════════════════════════════════
+   GREEN THEME (EMERALD AURORA)
+   ═══════════════════════════════════════════ */
+[data-theme='green'] {
+	--accent-1: oklch(0.65 0.26 155);
+	--accent-2: oklch(0.7 0.22 180);
+	--accent-3: oklch(0.62 0.24 130);
+
+	--shadow-sm: 0 1px 3px oklch(0.4 0.08 155 / 0.08);
+	--shadow-md: 0 4px 14px oklch(0.35 0.12 155 / 0.1), 0 2px 4px oklch(0.2 0 0 / 0.04);
+	--shadow-lg: 0 8px 32px oklch(0.35 0.14 155 / 0.14), 0 2px 8px oklch(0.2 0 0 / 0.05);
+	--shadow-glow: 0 0 48px oklch(0.65 0.26 155 / 0.25);
+}
+
+/* ═══════════════════════════════════════════
+   YELLOW THEME (SOLAR AURORA)
+   ═══════════════════════════════════════════ */
+[data-theme='yellow'] {
+	--accent-1: oklch(0.78 0.18 85);
+	--accent-2: oklch(0.72 0.2 50);
+	--accent-3: oklch(0.75 0.19 65);
+
+	--shadow-sm: 0 1px 3px oklch(0.5 0.08 85 / 0.08);
+	--shadow-md: 0 4px 14px oklch(0.45 0.1 85 / 0.1), 0 2px 4px oklch(0.2 0 0 / 0.04);
+	--shadow-lg: 0 8px 32px oklch(0.45 0.12 85 / 0.14), 0 2px 8px oklch(0.2 0 0 / 0.05);
+	--shadow-glow: 0 0 48px oklch(0.78 0.18 85 / 0.25);
+}
+
+/* ═══════════════════════════════════════════
+   DARK MODE (overlays on any color theme)
+   ═══════════════════════════════════════════ */
+.dark {
+	--bg: oklch(0.15 0.015 260);
+	--bg-secondary: oklch(0.2 0.02 260);
+	--surface: oklch(0.22 0.02 260);
+	--text: oklch(0.92 0.01 260);
+	--text-muted: oklch(0.6 0.015 260);
+	--border: oklch(0.3 0.02 260);
+
+	--glass-bg: oklch(0.2 0.02 260 / 0.6);
+	--glass-border: oklch(0.4 0.02 260 / 0.2);
+
+	--shadow-sm: 0 1px 3px oklch(0 0 0 / 0.25);
+	--shadow-md: 0 4px 14px oklch(0 0 0 / 0.35), 0 0 20px oklch(0.5 0.12 280 / 0.06);
+	--shadow-lg: 0 8px 32px oklch(0 0 0 / 0.45), 0 0 30px oklch(0.5 0.14 280 / 0.08);
+	--shadow-glow: 0 0 48px oklch(0.65 0.28 280 / 0.35);
+}
+
+.dark[data-theme='green'] {
+	--shadow-glow: 0 0 48px oklch(0.65 0.26 155 / 0.35);
+}
+
+.dark[data-theme='yellow'] {
+	--shadow-glow: 0 0 48px oklch(0.78 0.18 85 / 0.35);
+}
+
+/* ═══════════════════════════════════════════
+   SHARED TOKENS (theme-independent)
+   ═══════════════════════════════════════════ */
+:root {
+	/* ── Spacing Scale (4px base) ── */
+	--space-1: 0.25rem;
+	--space-2: 0.5rem;
+	--space-3: 0.75rem;
+	--space-4: 1rem;
+	--space-5: 1.25rem;
+	--space-6: 1.5rem;
+	--space-8: 2rem;
+	--space-10: 2.5rem;
+	--space-12: 3rem;
+	--space-16: 4rem;
+
+	/* ── Typography ── */
+	--font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+	--font-mono: 'JetBrains Mono', ui-monospace, monospace;
+	--text-xs: clamp(0.7rem, 0.65rem + 0.25vw, 0.75rem);
+	--text-sm: clamp(0.8rem, 0.75rem + 0.25vw, 0.875rem);
+	--text-base: clamp(0.9rem, 0.85rem + 0.25vw, 1rem);
+	--text-lg: clamp(1.05rem, 0.95rem + 0.5vw, 1.25rem);
+	--text-xl: clamp(1.2rem, 1rem + 1vw, 1.5rem);
+	--text-2xl: clamp(1.5rem, 1.1rem + 2vw, 2rem);
+	--text-3xl: clamp(1.8rem, 1.2rem + 3vw, 2.5rem);
+	--text-4xl: clamp(2.2rem, 1.4rem + 4vw, 3.5rem);
+
+	/* ── Radius ── */
+	--radius-sm: 0.375rem;
+	--radius-md: 0.75rem;
+	--radius-lg: 1rem;
+	--radius-xl: 1.5rem;
+	--radius-full: 9999px;
+
+	/* ── Transitions ── */
+	--ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+	--ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+	--duration-fast: 150ms;
+	--duration-normal: 250ms;
+	--duration-slow: 400ms;
+
+	/* ── Layout ── */
+	--max-width: 1200px;
+	--nav-height: 4rem;
+}
