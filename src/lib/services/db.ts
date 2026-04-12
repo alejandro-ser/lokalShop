@@ -1,11 +1,12 @@
 import type { CacheEntry } from '$lib/types/api.js';
 
 const DB_NAME = 'obraNativa';
-const DB_VERSION = 1;
+const DB_VERSION = 2;
 
 const STORES: Record<string, IDBObjectStoreParameters> = {
 	cart: { keyPath: 'id' },
-	cache: { keyPath: 'key' }
+	cache: { keyPath: 'key' },
+	orders: { keyPath: 'id' }
 };
 
 let db: IDBDatabase | null = null;

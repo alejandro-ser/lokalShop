@@ -48,8 +48,13 @@
 		"shipping": "Versand",
 		"free": "Kostenlos",
 		"total": "Gesamt",
-		"checkout": "Zur Kasse",
-		"clear": "Warenkorb leeren"
+		"checkout": "Bestellen",
+		"clear": "Warenkorb leeren",
+		"email_label": "E-Mail für Bestellupdates",
+		"email_placeholder": "du@beispiel.de",
+		"processing": "Wird verarbeitet…",
+		"success": "Bestellung aufgegeben! Ihre Bestellnummer:",
+		"order_error": "Bestellung fehlgeschlagen. Bitte erneut versuchen."
 	},
 	"profile": {
 		"guest": "Gastbenutzer",
@@ -58,7 +63,19 @@
 		"cart_total": "Gesamtsumme",
 		"orders": "Bestellungen",
 		"view_cart": "Warenkorb ansehen",
-		"contact_us": "Kontakt"
+		"contact_us": "Kontakt",
+		"my_orders": "Meine Bestellungen",
+		"order_lookup": "Bestellungen nachschlagen",
+		"order_lookup_desc": "Geben Sie die E-Mail-Adresse ein, die Sie beim Checkout verwendet haben.",
+		"search": "Suchen",
+		"searching": "Suche läuft…",
+		"no_orders": "Keine Bestellungen für diese E-Mail gefunden.",
+		"order_id": "Bestellung",
+		"order_date": "Datum",
+		"order_status": "Status",
+		"order_total": "Gesamt",
+		"email_required": "Bitte geben Sie eine gültige E-Mail ein.",
+		"view_details": "Details"
 	},
 	"contact": {
 		"title": "Kontakt",
@@ -78,6 +95,38 @@
 		"contact": "Kontakt",
 		"impressum": "Impressum",
 		"rights": "Alle Rechte vorbehalten."
+	},
+	"cart_validation": {
+		"email_invalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein."
+	},
+	"admin": {
+		"title": "Bestell-Dashboard",
+		"subtitle": "Alle Bestellungen verwalten und verfolgen",
+		"refresh": "Aktualisieren",
+		"logout": "Abmelden",
+		"retry": "Erneut versuchen",
+		"no_orders": "Noch keine Bestellungen",
+		"no_orders_desc": "Über den Checkout aufgegebene Bestellungen erscheinen hier.",
+		"search_placeholder": "Nach ID oder E-Mail suchen…",
+		"no_results": "Keine Bestellungen gefunden.",
+		"order_number": "Bestell-Nr.",
+		"order_id": "Bestell-ID",
+		"copy": "Kopieren",
+		"copied": "Kopiert!",
+		"customer": "Kunde",
+		"total": "Gesamt",
+		"date": "Datum",
+		"status": "Status",
+		"items": "Artikel",
+		"qty": "Menge",
+		"unit_price": "Stückpreis",
+		"delete": "Bestellung löschen",
+		"delete_confirm": "Sind Sie sicher?",
+		"status_pending": "Ausstehend",
+		"status_confirmed": "Bestätigt",
+		"status_shipped": "Versendet",
+		"status_delivered": "Zugestellt",
+		"status_cancelled": "Storniert"
 	},
 	"theme": {
 		"light": "Zum hellen Modus wechseln",

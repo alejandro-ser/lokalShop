@@ -48,8 +48,13 @@
 		"shipping": "Envío",
 		"free": "Gratis",
 		"total": "Total",
-		"checkout": "Pagar",
-		"clear": "Vaciar Carrito"
+		"checkout": "Realizar Pedido",
+		"clear": "Vaciar Carrito",
+		"email_label": "Email para seguimiento del pedido",
+		"email_placeholder": "tu@ejemplo.com",
+		"processing": "Procesando…",
+		"success": "¡Pedido realizado! Tu número de pedido es:",
+		"order_error": "No se pudo realizar el pedido. Inténtalo de nuevo."
 	},
 	"profile": {
 		"guest": "Usuario Invitado",
@@ -58,7 +63,19 @@
 		"cart_total": "Total del Carrito",
 		"orders": "Pedidos",
 		"view_cart": "Ver Carrito",
-		"contact_us": "Contáctanos"
+		"contact_us": "Contáctanos",
+		"my_orders": "Mis Pedidos",
+		"order_lookup": "Buscar tus pedidos",
+		"order_lookup_desc": "Ingresa el correo que usaste al realizar tu pedido.",
+		"search": "Buscar",
+		"searching": "Buscando…",
+		"no_orders": "No se encontraron pedidos para este correo.",
+		"order_id": "Pedido",
+		"order_date": "Fecha",
+		"order_status": "Estado",
+		"order_total": "Total",
+		"email_required": "Ingresa un correo válido.",
+		"view_details": "Detalles"
 	},
 	"contact": {
 		"title": "Contáctanos",
@@ -78,6 +95,38 @@
 		"contact": "Contacto",
 		"impressum": "Aviso Legal",
 		"rights": "Todos los derechos reservados."
+	},
+	"cart_validation": {
+		"email_invalid": "Por favor ingresa un correo electrónico válido."
+	},
+	"admin": {
+		"title": "Panel de Pedidos",
+		"subtitle": "Gestiona y rastrea todos los pedidos",
+		"refresh": "Actualizar",
+		"logout": "Cerrar sesión",
+		"retry": "Reintentar",
+		"no_orders": "Sin pedidos aún",
+		"no_orders_desc": "Los pedidos realizados aparecerán aquí.",
+		"search_placeholder": "Buscar por ID o correo…",
+		"no_results": "Ningún pedido coincide con la búsqueda.",
+		"order_number": "Nº de Pedido",
+		"order_id": "ID del Pedido",
+		"copy": "Copiar",
+		"copied": "¡Copiado!",
+		"customer": "Cliente",
+		"total": "Total",
+		"date": "Fecha",
+		"status": "Estado",
+		"items": "Artículos",
+		"qty": "Cant.",
+		"unit_price": "Precio unit.",
+		"delete": "Eliminar Pedido",
+		"delete_confirm": "¿Estás seguro?",
+		"status_pending": "Pendiente",
+		"status_confirmed": "Confirmado",
+		"status_shipped": "Enviado",
+		"status_delivered": "Entregado",
+		"status_cancelled": "Cancelado"
 	},
 	"theme": {
 		"light": "Cambiar a modo claro",

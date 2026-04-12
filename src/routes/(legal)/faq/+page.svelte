@@ -1,7 +1,7 @@
 <script lang="ts">
-	import GlassContainer from '$lib/components/GlassContainer.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 	import { ts, t } from '$lib/i18n/index.svelte.js';
+	import type { FaqItem } from '$lib/types/api.js';
 
 	let openIndex = $state(-1);
 
@@ -9,7 +9,7 @@
 		openIndex = openIndex === i ? -1 : i;
 	}
 
-	let faqs = $derived(t('faq.items') as { q: string; a: string }[]);
+	let faqs = $derived(t('faq.items') as FaqItem[]);
 </script>
 
 <svelte:head>

@@ -83,6 +83,7 @@
 	.nav-inner {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 		height: 100%;
 		gap: var(--space-8);
 	}
@@ -189,11 +190,14 @@
 			bottom: 0;
 			flex-direction: column;
 			background: var(--bg);
-			padding: var(--space-4);
+			backdrop-filter: blur(24px) saturate(1.4);
+			-webkit-backdrop-filter: blur(24px) saturate(1.4);
+			padding: var(--space-6) var(--space-4);
 			gap: var(--space-1);
 			transform: translateX(-100%);
 			transition: transform var(--duration-normal) var(--ease-out);
 			z-index: 99;
+			border-right: 1px solid var(--border);
 		}
 
 		.nav-links.open {
@@ -203,6 +207,13 @@
 		.nav-link {
 			font-size: var(--text-lg);
 			padding: var(--space-3) var(--space-4);
+			border-radius: var(--radius-md);
+			color: var(--text);
+		}
+
+		.nav-link:hover,
+		.nav-link.active {
+			background: color-mix(in oklch, var(--accent-1) 12%, transparent);
 		}
 
 		.menu-toggle {
@@ -214,7 +225,9 @@
 			position: fixed;
 			inset: 0;
 			z-index: 98;
-			background: oklch(0 0 0 / 0.3);
+			background: oklch(0 0 0 / 0.5);
+			backdrop-filter: blur(4px);
+			-webkit-backdrop-filter: blur(4px);
 		}
 
 		.profile-btn {

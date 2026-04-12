@@ -4,25 +4,38 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import { ts, locale } from '$lib/i18n/index.svelte.js';
 	import { onMount } from 'svelte';
+	import { PUBLIC_MELIBO_CONTACT_KEY } from '$env/static/public';
 
 	let formContainer = $state<HTMLDivElement | null>(null);
 
+	function insertForm() {
+		if (!formContainer || !PUBLIC_MELIBO_CONTACT_KEY) return;
+		formContainer.innerHTML = '';
+		const el = document.createElement('melibo-contact');
+		el.setAttribute('channel-key', PUBLIC_MELIBO_CONTACT_KEY);
+		el.setAttribute('language', locale());
+		formContainer.appendChild(el);
+	}
+
 	onMount(() => {
-		const script = document.createElement('script');
-		script.src = 'https://cdn.gomelibo.com/v1/form.js';
-		script.async = true;
-		script.onload = () => {
-			if (formContainer) {
-				const el = document.createElement('melibo-contact');
-				el.setAttribute('channel-key', 'c297cf07-73ef-4aa0-8ceb-344462a03bd1');
-				el.setAttribute('language', locale());
-				formContainer.appendChild(el);
-			}
-		};
-		document.head.appendChild(script);
+		if (!PUBLIC_MELIBO_CONTACT_KEY) return;
+
+		const scriptAlready = document.querySelector<HTMLScriptElement>(
+			'script[src*="gomelibo.com/v1/form.js"]'
+		);
+
+		if (scriptAlready) {
+			requestAnimationFrame(insertForm);
+		} else {
+			const script = document.createElement('script');
+			script.src = 'https://cdn.gomelibo.com/v1/form.js';
+			script.async = true;
+			script.onload = () => requestAnimationFrame(insertForm);
+			document.head.appendChild(script);
+		}
 
 		return () => {
-			script.remove();
+			if (formContainer) formContainer.innerHTML = '';
 		};
 	});
 </script>

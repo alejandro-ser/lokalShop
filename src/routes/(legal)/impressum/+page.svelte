@@ -1,5 +1,6 @@
 <script lang="ts">
 	import GlassContainer from '$lib/components/GlassContainer.svelte';
+	import RT from '$lib/components/RT.svelte';
 	import { ts } from '$lib/i18n/index.svelte.js';
 </script>
 
@@ -17,24 +18,24 @@
 				<h2>{ts('impressum.company_title')}</h2>
 				<p><strong>{ts('impressum.company_name')}</strong></p>
 				<p>{ts('impressum.company_desc')}</p>
-				<p class="address">{ts('impressum.company_address')}</p>
+				<RT content={ts('impressum.company_address')} />
 			</GlassContainer>
 
 			<GlassContainer>
 				<h2>{ts('impressum.contact_title')}</h2>
-				<p>{ts('impressum.contact_email')}</p>
-				<p>{ts('impressum.contact_phone')}</p>
+				<RT content={ts('impressum.contact_email')} />
+				<RT content={ts('impressum.contact_phone')} />
 			</GlassContainer>
 
 			<GlassContainer>
 				<h2>{ts('impressum.disclaimer_title')}</h2>
-				<p>{ts('impressum.disclaimer_p1')}</p>
-				<p>{ts('impressum.disclaimer_p2')}</p>
+				<RT content={ts('impressum.disclaimer_p1')} />
+				<RT content={ts('impressum.disclaimer_p2')} />
 			</GlassContainer>
 
 			<GlassContainer>
 				<h2>{ts('impressum.liability_title')}</h2>
-				<p>{ts('impressum.liability_text')}</p>
+				<RT content={ts('impressum.liability_text')} />
 			</GlassContainer>
 		</div>
 	</div>
@@ -63,11 +64,8 @@
 		line-height: 1.8;
 	}
 
-	.content p + p {
+	.content p + p,
+	.content :global(.rt + .rt) {
 		margin-top: var(--space-2);
-	}
-
-	.address {
-		white-space: pre-line;
 	}
 </style>

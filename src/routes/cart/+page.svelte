@@ -6,9 +6,20 @@
 	import GlassContainer from '$lib/components/GlassContainer.svelte';
 	import { cart } from '$lib/store/cart.js';
 	import { ts } from '$lib/i18n/index.svelte.js';
+	import { createOrder } from '$lib/services/order.js';
 
 	let total = $derived($cart.reduce((sum, i) => sum + i.price * i.qty, 0));
 	let itemCount = $derived($cart.reduce((sum, i) => sum + i.qty, 0));
+
+	let email = $state('');
+	let emailTouched = $state(false);
+	let checkoutBusy = $state(false);
+	let orderId = $state('');
+	let checkoutError = $state('');
+
+	const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	let emailValid = $derived(EMAIL_RE.test(email.trim()));
+	let showEmailError = $derived(emailTouched && !emailValid);
 
 	function cleanUrl(img: string): string {
 		try {
@@ -17,6 +28,20 @@
 			return cleaned;
 		} catch {
 			return 'https://placehold.co/100x100/eee/999?text=No+Image';
+		}
+	}
+
+	async function handleCheckout() {
+		checkoutBusy = true;
+		checkoutError = '';
+		try {
+			const order = await createOrder($cart, email.trim());
+			orderId = order.id;
+			cart.clearCart();
+		} catch {
+			checkoutError = ts('cart.order_error');
+		} finally {
+			checkoutBusy = false;
 		}
 	}
 </script>
@@ -29,7 +54,17 @@
 	<div class="container">
 		<h1 class="page-title">{ts('cart.title')}</h1>
 
-		{#if $cart.length === 0}
+		{#if orderId}
+			<div class="empty-state success-state">
+				<Icon name="check" size={64} />
+				<h2>{ts('cart.success')}</h2>
+				<code class="order-code">{orderId.slice(0, 8)}…</code>
+				<Button href="{base}/products" variant="primary" size="lg">
+					<Icon name="tag" size={20} />
+					{ts('home.browse')}
+				</Button>
+			</div>
+		{:else if $cart.length === 0}
 			<div class="empty-state">
 				<Icon name="shopping-cart" size={64} />
 				<h2>{ts('cart.empty')}</h2>
@@ -98,9 +133,32 @@
 							<span>{ts('cart.total')}</span>
 							<span>${total.toFixed(2)}</span>
 						</div>
-						<Button variant="primary" size="lg" onclick={() => alert('Checkout coming soon!')}>
-							{ts('cart.checkout')}
+						<div class="email-field" class:has-error={showEmailError}>
+							<label for="checkout-email">{ts('cart.email_label')}</label>
+							<input
+								id="checkout-email"
+								type="email"
+								required
+								bind:value={email}
+								onblur={() => (emailTouched = true)}
+								placeholder={ts('cart.email_placeholder')}
+								aria-invalid={showEmailError}
+							/>
+							{#if showEmailError}
+								<p class="field-error">{ts('cart_validation.email_invalid')}</p>
+							{/if}
+						</div>
+						<Button variant="primary" size="lg" onclick={handleCheckout} disabled={checkoutBusy || !emailValid}>
+							{#if checkoutBusy}
+								{ts('cart.processing')}
+							{:else}
+								<Icon name="check" size={18} />
+								{ts('cart.checkout')}
+							{/if}
 						</Button>
+						{#if checkoutError}
+							<p class="checkout-error">{checkoutError}</p>
+						{/if}
 						<Button variant="ghost" size="sm" onclick={() => cart.clearCart()}>
 							<Icon name="trash" size={14} />
 							{ts('cart.clear')}
@@ -275,6 +333,69 @@
 		border: none;
 		border-top: 1px solid var(--border);
 		margin-block: var(--space-3);
+	}
+
+	.email-field {
+		margin-top: var(--space-4);
+	}
+
+	.email-field label {
+		display: block;
+		font-size: var(--text-sm);
+		font-weight: 600;
+		margin-bottom: var(--space-2);
+	}
+
+	.email-field input {
+		width: 100%;
+		background: var(--bg-secondary);
+		border: 1px solid var(--border);
+		border-radius: var(--radius-md);
+		padding: var(--space-3) var(--space-4);
+		font-size: var(--text-sm);
+		color: var(--text);
+		transition: border-color var(--duration-fast);
+	}
+
+	.email-field input:focus {
+		outline: none;
+		border-color: var(--accent-1);
+	}
+
+	.email-field.has-error input {
+		border-color: var(--danger);
+	}
+
+	.field-error {
+		color: var(--danger);
+		font-size: var(--text-xs);
+		font-weight: 600;
+		margin-top: var(--space-1);
+	}
+
+	.email-field input::placeholder {
+		color: var(--text-muted);
+		opacity: 0.6;
+	}
+
+	.checkout-error {
+		color: var(--danger);
+		font-size: var(--text-sm);
+		font-weight: 600;
+		text-align: center;
+	}
+
+	.success-state :global(svg) {
+		color: var(--success);
+	}
+
+	.order-code {
+		font-family: var(--font-mono);
+		font-size: var(--text-lg);
+		background: var(--bg-secondary);
+		padding: var(--space-2) var(--space-4);
+		border-radius: var(--radius-md);
+		color: var(--accent-1);
 	}
 
 	.cart-summary :global(.btn) {

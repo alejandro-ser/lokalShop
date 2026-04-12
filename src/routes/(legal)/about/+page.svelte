@@ -1,5 +1,6 @@
 <script lang="ts">
 	import GlassContainer from '$lib/components/GlassContainer.svelte';
+	import RT from '$lib/components/RT.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 	import { ts } from '$lib/i18n/index.svelte.js';
 </script>
@@ -16,17 +17,17 @@
 		<div class="content">
 			<GlassContainer>
 				<h2>{ts('about.mission_title')}</h2>
-				<p>{ts('about.mission_text')}</p>
+				<RT content={ts('about.mission_text')} />
 			</GlassContainer>
 
 			<GlassContainer>
 				<h2>{ts('about.story_title')}</h2>
-				<p>{ts('about.story_text')}</p>
+				<RT content={ts('about.story_text')} />
 			</GlassContainer>
 
 			<GlassContainer>
 				<h2>{ts('about.tech_title')}</h2>
-				<p>{ts('about.tech_text')}</p>
+				<RT content={ts('about.tech_text')} />
 			</GlassContainer>
 
 			<div class="values-grid">

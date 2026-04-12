@@ -48,8 +48,13 @@
 		"shipping": "Shipping",
 		"free": "Free",
 		"total": "Total",
-		"checkout": "Checkout",
-		"clear": "Clear Cart"
+		"checkout": "Place Order",
+		"clear": "Clear Cart",
+		"email_label": "Email for order updates",
+		"email_placeholder": "you@example.com",
+		"processing": "Processing…",
+		"success": "Order placed! Your order ID is:",
+		"order_error": "Could not place order. Try again."
 	},
 	"profile": {
 		"guest": "Guest User",
@@ -58,7 +63,19 @@
 		"cart_total": "Cart Total",
 		"orders": "Orders",
 		"view_cart": "View Cart",
-		"contact_us": "Contact Us"
+		"contact_us": "Contact Us",
+		"my_orders": "My Orders",
+		"order_lookup": "Look up your orders",
+		"order_lookup_desc": "Enter the email address you used at checkout.",
+		"search": "Search",
+		"searching": "Searching…",
+		"no_orders": "No orders found for this email.",
+		"order_id": "Order",
+		"order_date": "Date",
+		"order_status": "Status",
+		"order_total": "Total",
+		"email_required": "Please enter a valid email.",
+		"view_details": "Details"
 	},
 	"contact": {
 		"title": "Contact Us",
@@ -78,6 +95,38 @@
 		"contact": "Contact",
 		"impressum": "Impressum",
 		"rights": "All rights reserved."
+	},
+	"cart_validation": {
+		"email_invalid": "Please enter a valid email address."
+	},
+	"admin": {
+		"title": "Order Dashboard",
+		"subtitle": "Manage and track all orders",
+		"refresh": "Refresh",
+		"logout": "Logout",
+		"retry": "Retry",
+		"no_orders": "No orders yet",
+		"no_orders_desc": "Orders placed via checkout will appear here.",
+		"search_placeholder": "Search by ID or email…",
+		"no_results": "No orders match your search.",
+		"order_number": "Order ID",
+		"order_id": "Order ID",
+		"copy": "Copy",
+		"copied": "Copied!",
+		"customer": "Customer",
+		"total": "Total",
+		"date": "Date",
+		"status": "Status",
+		"items": "Items",
+		"qty": "Qty",
+		"unit_price": "Unit price",
+		"delete": "Delete Order",
+		"delete_confirm": "Are you sure?",
+		"status_pending": "Pending",
+		"status_confirmed": "Confirmed",
+		"status_shipped": "Shipped",
+		"status_delivered": "Delivered",
+		"status_cancelled": "Cancelled"
 	},
 	"theme": {
 		"light": "Switch to light mode",

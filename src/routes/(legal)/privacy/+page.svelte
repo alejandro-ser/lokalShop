@@ -1,5 +1,6 @@
 <script lang="ts">
 	import GlassContainer from '$lib/components/GlassContainer.svelte';
+	import RT from '$lib/components/RT.svelte';
 	import { ts } from '$lib/i18n/index.svelte.js';
 </script>
 
@@ -15,27 +16,27 @@
 		<div class="content">
 			<GlassContainer>
 				<h2>{ts('privacy.overview_title')}</h2>
-				<p>{ts('privacy.overview_text')}</p>
+				<RT content={ts('privacy.overview_text')} />
 			</GlassContainer>
 
 			<GlassContainer>
 				<h2>{ts('privacy.collection_title')}</h2>
-				<p>{ts('privacy.collection_text')}</p>
+				<RT content={ts('privacy.collection_text')} />
 			</GlassContainer>
 
 			<GlassContainer>
 				<h2>{ts('privacy.api_title')}</h2>
-				<p>{ts('privacy.api_text')}</p>
+				<RT content={ts('privacy.api_text')} />
 			</GlassContainer>
 
 			<GlassContainer>
 				<h2>{ts('privacy.rights_title')}</h2>
-				<p>{ts('privacy.rights_text')}</p>
+				<RT content={ts('privacy.rights_text')} />
 			</GlassContainer>
 
 			<GlassContainer>
 				<h2>{ts('privacy.changes_title')}</h2>
-				<p>{ts('privacy.changes_text')}</p>
+				<RT content={ts('privacy.changes_text')} />
 			</GlassContainer>
 		</div>
 	</div>
@@ -57,10 +58,5 @@
 		font-size: var(--text-xl);
 		font-weight: 700;
 		margin-bottom: var(--space-3);
-	}
-
-	.content p {
-		color: var(--text-muted);
-		line-height: 1.8;
 	}
 </style>
