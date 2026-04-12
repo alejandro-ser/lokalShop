@@ -4,7 +4,7 @@
 	import Button from './Button.svelte';
 	import Icon from './Icon.svelte';
 	import { cart } from '$lib/store/cart.js';
-	import { t } from '$lib/store/i18n.js';
+	import { ts } from '$lib/i18n/index.svelte.js';
 	import type { Product } from '$lib/types/api.js';
 
 	let { product }: { product: Product } = $props();
@@ -43,7 +43,7 @@
 			<span class="card-price">${product.price}</span>
 			<Button variant="primary" size="sm" onclick={addToCart}>
 				<Icon name="shopping-cart" size={16} />
-				{$t.product.add_to_cart}
+				{ts('product.add_to_cart')}
 			</Button>
 		</div>
 	</div>

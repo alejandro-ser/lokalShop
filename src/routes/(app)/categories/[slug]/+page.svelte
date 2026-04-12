@@ -6,7 +6,7 @@
 	import Button from '$lib/components/Button.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 	import { getProductsByCategory, getCategory } from '$lib/services/api.js';
-	import { t } from '$lib/store/i18n.js';
+	import { ts } from '$lib/i18n/index.svelte.js';
 	import type { Product, Category } from '$lib/types/api.js';
 
 	const LIMIT = 12;
@@ -57,7 +57,7 @@
 	<div class="container">
 		<a href="{base}/categories" class="back-link">
 			<Icon name="arrow-left" size={18} />
-			{$t.category.all}
+			{ts('category.all')}
 		</a>
 
 		{#if loading}
@@ -86,10 +86,10 @@
 				{#if hasMore}
 					<div class="load-more">
 						<Button variant="secondary" size="lg" onclick={loadMore} disabled={loadingMore}>
-							{#if loadingMore}
-								{$t.product.loading}
-							{:else}
-								{$t.product.load_more} <Icon name="chevron-right" size={18} />
+						{#if loadingMore}
+							{ts('product.loading')}
+						{:else}
+							{ts('product.load_more')} <Icon name="chevron-right" size={18} />
 							{/if}
 						</Button>
 					</div>
@@ -98,7 +98,7 @@
 				{#if products.length === 0}
 					<div class="empty-state">
 						<Icon name="tag" size={48} />
-						<p>{$t.category.no_products}</p>
+						<p>{ts('category.no_products')}</p>
 					</div>
 				{/if}
 			</div>

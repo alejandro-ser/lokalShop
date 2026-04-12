@@ -1,6 +1,5 @@
 <script lang="ts">
-	import { locale, setLocale, locales, type Locale } from '$lib/store/i18n.js';
-	import Icon from './Icon.svelte';
+	import { locale, setLocale, locales, type Locale } from '$lib/i18n/index.svelte.js';
 
 	let open = $state(false);
 
@@ -24,14 +23,14 @@
 		onclick={(e) => { e.stopPropagation(); open = !open; }}
 		aria-label="Change language"
 	>
-		<span class="lang-code">{labels[$locale]}</span>
+		<span class="lang-code">{labels[locale()]}</span>
 	</button>
 	{#if open}
 		<div class="lang-dropdown" role="listbox" tabindex="-1" onclick={(e) => e.stopPropagation()} onkeydown={(e) => e.key === 'Escape' && (open = false)}>
 			{#each locales as l (l)}
 				<button
 					class="lang-option"
-					class:active={$locale === l}
+					class:active={locale() === l}
 					onclick={() => pick(l)}
 				>
 					{labels[l]}

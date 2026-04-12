@@ -1,0 +1,168 @@
+{
+	"seo": {
+		"default_title": "obraNativa — Curated Products, Native Craft",
+		"default_description": "A modern e-commerce experience featuring curated products from artisans worldwide. Built with performance and care."
+	},
+	"nav": {
+		"home": "Home",
+		"categories": "Categories",
+		"products": "Products",
+		"about": "About",
+		"cart": "Cart",
+		"profile": "Profile",
+		"faq": "FAQ",
+		"contact": "Contact",
+		"impressum": "Impressum"
+	},
+	"home": {
+		"hero_title_1": "Discover",
+		"hero_title_2": "Native Craft",
+		"hero_subtitle": "A curated collection of unique products, built with passion and precision.",
+		"browse": "Browse Products",
+		"featured": "Featured Products",
+		"view_all": "View all"
+	},
+	"product": {
+		"add_to_cart": "Add",
+		"add_cart_full": "Add to Cart",
+		"back": "Back to Products",
+		"not_found": "Product not found.",
+		"quantity": "Quantity",
+		"load_more": "Load More",
+		"loading": "Loading...",
+		"no_products": "No products found.",
+		"all_products": "All Products",
+		"browse_collection": "Browse our curated collection"
+	},
+	"category": {
+		"all": "All Categories",
+		"explore": "Explore our curated collections",
+		"no_products": "No products in this category yet."
+	},
+	"cart": {
+		"title": "Shopping Cart",
+		"empty": "Your cart is empty",
+		"empty_desc": "Discover amazing products and add them to your cart.",
+		"summary": "Order Summary",
+		"items": "Items",
+		"shipping": "Shipping",
+		"free": "Free",
+		"total": "Total",
+		"checkout": "Checkout",
+		"clear": "Clear Cart"
+	},
+	"profile": {
+		"guest": "Guest User",
+		"welcome": "Welcome to obraNativa",
+		"cart_items": "Cart Items",
+		"cart_total": "Cart Total",
+		"orders": "Orders",
+		"view_cart": "View Cart",
+		"contact_us": "Contact Us"
+	},
+	"contact": {
+		"title": "Contact Us",
+		"subtitle": "We'd love to hear from you",
+		"email": "Email",
+		"live_chat": "Live Chat",
+		"live_chat_desc": "Use the chat widget in the bottom-right corner for instant support.",
+		"faq_link": "Check our FAQ page for common questions.",
+		"send_message": "Send us a message",
+		"loading_form": "Loading contact form..."
+	},
+	"footer": {
+		"tagline": "Curated products, native craft.",
+		"shop": "Shop",
+		"all_products": "All Products",
+		"company": "Company",
+		"contact": "Contact",
+		"impressum": "Impressum",
+		"rights": "All rights reserved."
+	},
+	"theme": {
+		"light": "Switch to light mode",
+		"dark": "Switch to dark mode"
+	},
+	"about": {
+		"title": "About obraNativa",
+		"subtitle": "Crafting digital experiences with care",
+		"mission_title": "Our Mission",
+		"mission_text": "obraNativa is a curated marketplace dedicated to connecting people with unique, high-quality products from artisans and creators worldwide. We believe that every purchase should be an experience — from the moment of discovery through unboxing and beyond. Our team personally vets every product to ensure it meets our standards for craftsmanship, sustainability, and design integrity.",
+		"story_title": "Our Story",
+		"story_text": "Founded in 2024, obraNativa was born from a simple observation: the best products in the world are often hidden behind algorithm-driven marketplaces that prioritize volume over quality. We set out to build a platform that reverses that equation — one that puts the artisan front and center, celebrates the stories behind each piece, and rewards thoughtful purchasing over impulse buying. Today, our catalog spans textiles, ceramics, leather goods, and digital art from over 30 countries.",
+		"tech_title": "Built Different",
+		"tech_text": "This platform is built with cutting-edge web technology: SvelteKit for blazing-fast performance, modern CSS with OKLCH color science for a visually stunning experience, and IndexedDB for offline-first reliability. We chose zero external CSS frameworks and no bloated dependencies — every byte serves a purpose. The result is a sub-second load time and a perfect Lighthouse score.",
+		"values": {
+			"quality_title": "Quality First",
+			"quality_text": "Every product is carefully curated for quality and uniqueness.",
+			"pricing_title": "Fair Pricing",
+			"pricing_text": "Transparent pricing with no hidden costs or surprises.",
+			"community_title": "Community",
+			"community_text": "Building a community of craft enthusiasts and artisans."
+		}
+	},
+	"faq": {
+		"title": "Frequently Asked Questions",
+		"subtitle": "Everything you need to know",
+		"items": [
+			{
+				"q": "What is obraNativa?",
+				"a": "obraNativa is a curated e-commerce platform showcasing unique, handcrafted products from artisans worldwide. We focus on quality, authenticity, and fair pricing — every item on our platform has been personally vetted by our team."
+			},
+			{
+				"q": "What are your shipping options and delivery times?",
+				"a": "We offer standard shipping (5–7 business days), express shipping (2–3 business days), and eco-friendly carbon-neutral shipping. All orders above €50 qualify for free standard shipping within the EU. International orders are calculated at checkout based on weight and destination."
+			},
+			{
+				"q": "What is your return and refund policy?",
+				"a": "We accept returns within 30 days of delivery for items in their original condition. Custom or personalized products are exempt from returns unless defective. Refunds are processed within 5 business days after we receive and inspect the returned item. Return shipping costs are covered by the buyer unless the item arrived damaged or incorrect."
+			},
+			{
+				"q": "What materials are used in your products?",
+				"a": "Our artisans work with a wide range of natural and sustainable materials, including organic cotton, vegetable-tanned leather, recycled metals, FSC-certified wood, and hand-blown glass. Each product listing includes detailed material information and care instructions."
+			},
+			{
+				"q": "How does the offline cart work?",
+				"a": "Your cart is stored in IndexedDB, a browser-native database that persists data without requiring a server. This means your selections survive page reloads, browser closures, and even complete offline sessions. When you reconnect, everything is exactly where you left it."
+			},
+			{
+				"q": "How do I contact support?",
+				"a": "You can reach us through the live chat widget in the bottom-right corner of every page, through our Contact page form, or by emailing info@obranativa.example.com. Our support team typically responds within 24 hours during business days."
+			},
+			{
+				"q": "What payment methods are accepted?",
+				"a": "This is currently a demo application and no real transactions are processed. In a production release, we would support Visa, Mastercard, PayPal, Apple Pay, Google Pay, and SEPA bank transfers for EU customers."
+			}
+		]
+	},
+	"impressum": {
+		"title": "Impressum",
+		"subtitle": "Legal information according to § 5 TMG",
+		"company_title": "Company Information",
+		"company_name": "obraNativa",
+		"company_desc": "Demo E-Commerce Application",
+		"company_address": "Musterstraße 1\n12345 Musterstadt\nGermany",
+		"contact_title": "Contact",
+		"contact_email": "Email: info@obranativa.example.com",
+		"contact_phone": "Phone: +49 (0) 123 456 789",
+		"disclaimer_title": "Disclaimer",
+		"disclaimer_p1": "This is a demo application built for educational and portfolio purposes. No real commercial transactions are processed. Product data is provided by the Platzi Fake Store API and does not represent real products or offerings.",
+		"disclaimer_p2": "All trademarks and brand names mentioned belong to their respective owners.",
+		"liability_title": "Limitation of Liability",
+		"liability_text": "The contents of this website are created with the utmost care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content. As a service provider, we are responsible for our own content on these pages under general laws. However, we are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity."
+	},
+	"privacy": {
+		"title": "Privacy Policy",
+		"subtitle": "Your data, your rights — GDPR compliant",
+		"overview_title": "Overview",
+		"overview_text": "This application stores data exclusively in your browser using IndexedDB. No personal data is collected, transmitted, or stored on any external server. We take your privacy seriously and have designed this platform to be as transparent as possible.",
+		"collection_title": "Data Collection",
+		"collection_text": "We do not collect any personally identifiable information (PII). The only data stored is your shopping cart contents and display preferences (theme and language), all held locally in your browser's IndexedDB and localStorage. No cookies are set by this application.",
+		"api_title": "Third-Party API Requests",
+		"api_text": "Product and category data is fetched from the Platzi Fake Store API (api.escuelajs.co). These requests do not include any personal information. The Melibo chatbot widget, if loaded, is governed by Melibo's own privacy policy.",
+		"rights_title": "Your Rights Under GDPR",
+		"rights_text": "Under the EU General Data Protection Regulation (GDPR), you have the right to access, rectify, erase, restrict processing, data portability, and object to processing of your personal data. Since we do not collect personal data, these rights are inherently satisfied. You can clear all locally stored data at any time by clearing your browser's site data.",
+		"changes_title": "Changes to This Policy",
+		"changes_text": "We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated revision date. We encourage you to review this policy periodically."
+	}
+}

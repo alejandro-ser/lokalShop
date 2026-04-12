@@ -8,7 +8,7 @@
 	import GlassContainer from '$lib/components/GlassContainer.svelte';
 	import { getProduct } from '$lib/services/api.js';
 	import { cart } from '$lib/store/cart.js';
-	import { t } from '$lib/store/i18n.js';
+	import { ts } from '$lib/i18n/index.svelte.js';
 	import type { Product } from '$lib/types/api.js';
 
 	let product = $state.raw<Product | null>(null);
@@ -60,7 +60,7 @@
 	<div class="container">
 		<a href="{base}/products" class="back-link">
 			<Icon name="arrow-left" size={18} />
-			{$t.product.back}
+			{ts('product.back')}
 		</a>
 
 		{#if loading}
@@ -102,7 +102,7 @@
 						<p class="detail-desc">{product.description}</p>
 
 						<div class="qty-row">
-							<span class="qty-label">{$t.product.quantity}</span>
+							<span class="qty-label">{ts('product.quantity')}</span>
 							<div class="qty-control">
 								<button class="qty-btn" onclick={() => qty > 1 && (qty -= 1)} aria-label="Decrease">
 									<Icon name="minus" size={16} />
@@ -116,7 +116,7 @@
 
 						<Button variant="primary" size="lg" onclick={addToCart}>
 							<Icon name="shopping-cart" size={20} />
-							{$t.product.add_cart_full} — ${product.price * qty}
+							{ts('product.add_cart_full')} — ${product.price * qty}
 						</Button>
 					</GlassContainer>
 				</div>
@@ -124,8 +124,8 @@
 		{:else}
 			<div class="empty-state">
 				<Icon name="info" size={48} />
-				<p>{$t.product.not_found}</p>
-				<Button href="{base}/products" variant="secondary">{$t.product.back}</Button>
+				<p>{ts('product.not_found')}</p>
+				<Button href="{base}/products" variant="secondary">{ts('product.back')}</Button>
 			</div>
 		{/if}
 	</div>

@@ -6,7 +6,7 @@
 	import Button from '$lib/components/Button.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 	import { getProducts } from '$lib/services/api.js';
-	import { t } from '$lib/store/i18n.js';
+	import { ts } from '$lib/i18n/index.svelte.js';
 	import type { Product } from '$lib/types/api.js';
 
 	const LIMIT = 12;
@@ -52,13 +52,13 @@
 </script>
 
 <svelte:head>
-	<title>{$t.product.all_products} — obraNativa</title>
+	<title>{ts('product.all_products')} — obraNativa</title>
 </svelte:head>
 
 <section class="section">
 	<div class="container">
-		<h1 class="page-title">{$t.product.all_products}</h1>
-		<p class="page-subtitle">{$t.product.browse_collection}</p>
+		<h1 class="page-title">{ts('product.all_products')}</h1>
+		<p class="page-subtitle">{ts('product.browse_collection')}</p>
 
 		<div class="products-content">
 			{#if loading}
@@ -84,10 +84,10 @@
 				{#if hasMore}
 					<div class="load-more">
 						<Button variant="secondary" size="lg" onclick={loadMore} disabled={loadingMore}>
-							{#if loadingMore}
-								{$t.product.loading}
-							{:else}
-								{$t.product.load_more}
+						{#if loadingMore}
+							{ts('product.loading')}
+						{:else}
+							{ts('product.load_more')}
 								<Icon name="chevron-right" size={18} />
 							{/if}
 						</Button>
@@ -97,7 +97,7 @@
 				{#if products.length === 0}
 					<div class="empty-state">
 						<Icon name="tag" size={48} />
-						<p>{$t.product.no_products}</p>
+						<p>{ts('product.no_products')}</p>
 					</div>
 				{/if}
 			{/if}

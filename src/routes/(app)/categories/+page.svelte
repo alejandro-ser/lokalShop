@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import CategoryCard from '$lib/components/CategoryCard.svelte';
 	import { getCategories } from '$lib/services/api.js';
-	import { t } from '$lib/store/i18n.js';
+	import { ts } from '$lib/i18n/index.svelte.js';
 	import type { Category } from '$lib/types/api.js';
 
 	let categories = $state.raw<Category[]>([]);
@@ -20,13 +20,13 @@
 </script>
 
 <svelte:head>
-	<title>{$t.nav.categories} — obraNativa</title>
+	<title>{ts('nav.categories')} — obraNativa</title>
 </svelte:head>
 
 <section class="section">
 	<div class="container">
-		<h1 class="page-title">{$t.nav.categories}</h1>
-		<p class="page-subtitle">{$t.category.explore}</p>
+		<h1 class="page-title">{ts('nav.categories')}</h1>
+		<p class="page-subtitle">{ts('category.explore')}</p>
 
 		<div class="grid-wrap">
 			{#if loading}

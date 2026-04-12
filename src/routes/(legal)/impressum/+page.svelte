@@ -1,49 +1,40 @@
-<script>
+<script lang="ts">
 	import GlassContainer from '$lib/components/GlassContainer.svelte';
+	import { ts } from '$lib/i18n/index.svelte.js';
 </script>
 
 <svelte:head>
-	<title>Impressum — obraNativa</title>
+	<title>{ts('impressum.title')} — obraNativa</title>
 </svelte:head>
 
 <section class="section">
 	<div class="container legal-page">
-		<h1 class="page-title">Impressum</h1>
-		<p class="page-subtitle">Legal information according to § 5 TMG</p>
+		<h1 class="page-title">{ts('impressum.title')}</h1>
+		<p class="page-subtitle">{ts('impressum.subtitle')}</p>
 
 		<div class="content">
 			<GlassContainer>
-				<h2>Company Information</h2>
-				<p><strong>obraNativa</strong></p>
-				<p>Demo E-Commerce Application</p>
-				<p>Musterstraße 1<br />12345 Musterstadt<br />Germany</p>
+				<h2>{ts('impressum.company_title')}</h2>
+				<p><strong>{ts('impressum.company_name')}</strong></p>
+				<p>{ts('impressum.company_desc')}</p>
+				<p class="address">{ts('impressum.company_address')}</p>
 			</GlassContainer>
 
 			<GlassContainer>
-				<h2>Contact</h2>
-				<p>Email: info@obranativa.example.com</p>
-				<p>Phone: +49 (0) 123 456 789</p>
+				<h2>{ts('impressum.contact_title')}</h2>
+				<p>{ts('impressum.contact_email')}</p>
+				<p>{ts('impressum.contact_phone')}</p>
 			</GlassContainer>
 
 			<GlassContainer>
-				<h2>Disclaimer</h2>
-				<p>
-					This is a demo application built for educational and portfolio purposes.
-					No real commercial transactions are processed. Product data is provided by the
-					Platzi Fake Store API and does not represent real products or offerings.
-				</p>
-				<p>
-					All trademarks and brand names mentioned belong to their respective owners.
-				</p>
+				<h2>{ts('impressum.disclaimer_title')}</h2>
+				<p>{ts('impressum.disclaimer_p1')}</p>
+				<p>{ts('impressum.disclaimer_p2')}</p>
 			</GlassContainer>
 
 			<GlassContainer>
-				<h2>Privacy</h2>
-				<p>
-					This application stores data exclusively in your browser using IndexedDB.
-					No personal data is collected, transmitted, or stored on any server.
-					API requests are made to the Platzi Fake Store API for product data only.
-				</p>
+				<h2>{ts('impressum.liability_title')}</h2>
+				<p>{ts('impressum.liability_text')}</p>
 			</GlassContainer>
 		</div>
 	</div>
@@ -74,5 +65,9 @@
 
 	.content p + p {
 		margin-top: var(--space-2);
+	}
+
+	.address {
+		white-space: pre-line;
 	}
 </style>

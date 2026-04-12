@@ -1,50 +1,49 @@
-<script>
+<script lang="ts">
 	import GlassContainer from '$lib/components/GlassContainer.svelte';
 	import Icon from '$lib/components/Icon.svelte';
+	import { ts } from '$lib/i18n/index.svelte.js';
 </script>
 
 <svelte:head>
-	<title>About — obraNativa</title>
+	<title>{ts('about.title')} — obraNativa</title>
 </svelte:head>
 
 <section class="section">
 	<div class="container legal-page">
-		<h1 class="page-title">About obraNativa</h1>
-		<p class="page-subtitle">Crafting digital experiences with care</p>
+		<h1 class="page-title">{ts('about.title')}</h1>
+		<p class="page-subtitle">{ts('about.subtitle')}</p>
 
 		<div class="content">
 			<GlassContainer>
-				<h2>Our Mission</h2>
-				<p>
-					obraNativa is a curated marketplace dedicated to connecting people with unique, high-quality products.
-					We believe that every purchase should be an experience — from discovery to delivery.
-				</p>
+				<h2>{ts('about.mission_title')}</h2>
+				<p>{ts('about.mission_text')}</p>
 			</GlassContainer>
 
 			<GlassContainer>
-				<h2>Built Different</h2>
-				<p>
-					This platform is built with cutting-edge web technology: SvelteKit for blazing-fast performance,
-					modern CSS with OKLCH color science for a visually stunning experience, and IndexedDB for
-					offline-first reliability. Zero bloat, pure craft.
-				</p>
+				<h2>{ts('about.story_title')}</h2>
+				<p>{ts('about.story_text')}</p>
+			</GlassContainer>
+
+			<GlassContainer>
+				<h2>{ts('about.tech_title')}</h2>
+				<p>{ts('about.tech_text')}</p>
 			</GlassContainer>
 
 			<div class="values-grid">
 				<div class="value-card">
 					<Icon name="star" size={32} />
-					<h3>Quality First</h3>
-					<p>Every product is carefully curated for quality and uniqueness.</p>
+					<h3>{ts('about.values.quality_title')}</h3>
+					<p>{ts('about.values.quality_text')}</p>
 				</div>
 				<div class="value-card">
 					<Icon name="tag" size={32} />
-					<h3>Fair Pricing</h3>
-					<p>Transparent pricing with no hidden costs or surprises.</p>
+					<h3>{ts('about.values.pricing_title')}</h3>
+					<p>{ts('about.values.pricing_text')}</p>
 				</div>
 				<div class="value-card">
 					<Icon name="message-circle" size={32} />
-					<h3>Community</h3>
-					<p>Building a community of craft enthusiasts and artisans.</p>
+					<h3>{ts('about.values.community_title')}</h3>
+					<p>{ts('about.values.community_text')}</p>
 				</div>
 			</div>
 		</div>

@@ -4,7 +4,7 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import { cart } from '$lib/store/cart.js';
 	import { themeMode } from '$lib/store/theme.js';
-	import { locale } from '$lib/store/i18n.js';
+	import { ts } from '$lib/i18n/index.svelte.js';
 	import { onMount } from 'svelte';
 
 	let { children } = $props();
@@ -16,8 +16,8 @@
 
 <svelte:head>
 	<link rel="preconnect" href="https://api.escuelajs.co" />
-	<meta name="description" content="obraNativa — Curated products, native craft. A modern e-commerce experience." />
-	<title>obraNativa</title>
+	<meta name="description" content={ts('seo.default_description')} />
+	<title>{ts('seo.default_title')}</title>
 </svelte:head>
 
 <div class="aurora-bg"></div>

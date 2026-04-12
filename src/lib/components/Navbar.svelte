@@ -5,16 +5,16 @@
 	import ThemeSwitch from './ThemeSwitch.svelte';
 	import LangSwitch from './LangSwitch.svelte';
 	import { cart } from '$lib/store/cart.js';
-	import { t } from '$lib/store/i18n.js';
+	import { ts } from '$lib/i18n/index.svelte.js';
 
 	let menuOpen = $state(false);
 	let cartCount = $derived($cart.reduce((sum, i) => sum + i.qty, 0));
 
 	let links = $derived([
-		{ href: `${base}/`, label: $t.nav.home, icon: 'home' },
-		{ href: `${base}/categories`, label: $t.nav.categories, icon: 'grid' },
-		{ href: `${base}/products`, label: $t.nav.products, icon: 'tag' },
-		{ href: `${base}/about`, label: $t.nav.about, icon: 'info' }
+		{ href: `${base}/`, label: ts('nav.home'), icon: 'home' },
+		{ href: `${base}/categories`, label: ts('nav.categories'), icon: 'grid' },
+		{ href: `${base}/products`, label: ts('nav.products'), icon: 'tag' },
+		{ href: `${base}/about`, label: ts('nav.about'), icon: 'info' }
 	]);
 
 	function closeMenu() {
@@ -50,14 +50,14 @@
 			<LangSwitch />
 			<ThemeSwitch />
 
-			<a href="{base}/cart" class="cart-btn" aria-label="{$t.nav.cart} ({cartCount})">
+			<a href="{base}/cart" class="cart-btn" aria-label="{ts('nav.cart')} ({cartCount})">
 				<Icon name="shopping-cart" size={22} />
 				{#if cartCount > 0}
 					<span class="cart-badge">{cartCount}</span>
 				{/if}
 			</a>
 
-			<a href="{base}/profile" class="profile-btn" aria-label={$t.nav.profile}>
+			<a href="{base}/profile" class="profile-btn" aria-label={ts('nav.profile')}>
 				<Icon name="user" size={22} />
 			</a>
 

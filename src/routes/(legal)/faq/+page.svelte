@@ -1,49 +1,25 @@
 <script lang="ts">
 	import GlassContainer from '$lib/components/GlassContainer.svelte';
 	import Icon from '$lib/components/Icon.svelte';
-
-	const faqs: { q: string; a: string }[] = [
-		{
-			q: 'What is obraNativa?',
-			a: 'obraNativa is a curated e-commerce platform showcasing unique products from around the world. We focus on quality, craftsmanship, and fair pricing.'
-		},
-		{
-			q: 'How does the cart work offline?',
-			a: 'Your cart is stored in IndexedDB, a browser-native database. This means your selections persist across page reloads and even offline sessions.'
-		},
-		{
-			q: 'What payment methods are supported?',
-			a: 'This is a demo application. No real transactions are processed. In a production environment, we would integrate with Stripe, PayPal, or similar providers.'
-		},
-		{
-			q: 'Is my data stored securely?',
-			a: 'All data is stored locally in your browser. We do not collect or transmit any personal information. The API data comes from the Platzi Fake Store API.'
-		},
-		{
-			q: 'How do I contact support?',
-			a: 'You can reach us through the chatbot widget in the bottom-right corner, or visit our Contact page for a direct form.'
-		},
-		{
-			q: 'What technologies power this site?',
-			a: 'SvelteKit with adapter-static for deployment, modern CSS with OKLCH colors and glassmorphism, IndexedDB for offline persistence, and zero external CSS frameworks.'
-		}
-	];
+	import { ts, t } from '$lib/i18n/index.svelte.js';
 
 	let openIndex = $state(-1);
 
 	function toggle(i: number) {
 		openIndex = openIndex === i ? -1 : i;
 	}
+
+	let faqs = $derived(t('faq.items') as { q: string; a: string }[]);
 </script>
 
 <svelte:head>
-	<title>FAQ — obraNativa</title>
+	<title>{ts('faq.title')} — obraNativa</title>
 </svelte:head>
 
 <section class="section">
 	<div class="container legal-page">
-		<h1 class="page-title">Frequently Asked Questions</h1>
-		<p class="page-subtitle">Everything you need to know</p>
+		<h1 class="page-title">{ts('faq.title')}</h1>
+		<p class="page-subtitle">{ts('faq.subtitle')}</p>
 
 		<div class="faq-list">
 			{#each faqs as faq, i (i)}

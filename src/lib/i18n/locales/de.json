@@ -1,0 +1,168 @@
+{
+	"seo": {
+		"default_title": "obraNativa — Kuratierte Produkte, Native Handwerkskunst",
+		"default_description": "Ein modernes E-Commerce-Erlebnis mit kuratierten Produkten von Kunsthandwerkern weltweit. Entwickelt mit Leistung und Sorgfalt."
+	},
+	"nav": {
+		"home": "Startseite",
+		"categories": "Kategorien",
+		"products": "Produkte",
+		"about": "Über uns",
+		"cart": "Warenkorb",
+		"profile": "Profil",
+		"faq": "FAQ",
+		"contact": "Kontakt",
+		"impressum": "Impressum"
+	},
+	"home": {
+		"hero_title_1": "Entdecke",
+		"hero_title_2": "Native Handwerkskunst",
+		"hero_subtitle": "Eine kuratierte Sammlung einzigartiger Produkte, mit Leidenschaft und Präzision gefertigt.",
+		"browse": "Produkte durchstöbern",
+		"featured": "Ausgewählte Produkte",
+		"view_all": "Alle ansehen"
+	},
+	"product": {
+		"add_to_cart": "Hinzufügen",
+		"add_cart_full": "In den Warenkorb",
+		"back": "Zurück zu Produkte",
+		"not_found": "Produkt nicht gefunden.",
+		"quantity": "Menge",
+		"load_more": "Mehr laden",
+		"loading": "Laden...",
+		"no_products": "Keine Produkte gefunden.",
+		"all_products": "Alle Produkte",
+		"browse_collection": "Durchstöbere unsere kuratierte Sammlung"
+	},
+	"category": {
+		"all": "Alle Kategorien",
+		"explore": "Entdecke unsere kuratierten Sammlungen",
+		"no_products": "Noch keine Produkte in dieser Kategorie."
+	},
+	"cart": {
+		"title": "Warenkorb",
+		"empty": "Dein Warenkorb ist leer",
+		"empty_desc": "Entdecke tolle Produkte und füge sie hinzu.",
+		"summary": "Bestellübersicht",
+		"items": "Artikel",
+		"shipping": "Versand",
+		"free": "Kostenlos",
+		"total": "Gesamt",
+		"checkout": "Zur Kasse",
+		"clear": "Warenkorb leeren"
+	},
+	"profile": {
+		"guest": "Gastbenutzer",
+		"welcome": "Willkommen bei obraNativa",
+		"cart_items": "Warenkorb",
+		"cart_total": "Gesamtsumme",
+		"orders": "Bestellungen",
+		"view_cart": "Warenkorb ansehen",
+		"contact_us": "Kontakt"
+	},
+	"contact": {
+		"title": "Kontakt",
+		"subtitle": "Wir freuen uns auf Ihre Nachricht",
+		"email": "E-Mail",
+		"live_chat": "Live-Chat",
+		"live_chat_desc": "Nutzen Sie das Chat-Widget unten rechts für sofortige Hilfe.",
+		"faq_link": "Besuchen Sie unsere FAQ-Seite für häufige Fragen.",
+		"send_message": "Schreiben Sie uns",
+		"loading_form": "Kontaktformular wird geladen..."
+	},
+	"footer": {
+		"tagline": "Kuratierte Produkte, native Handwerkskunst.",
+		"shop": "Shop",
+		"all_products": "Alle Produkte",
+		"company": "Unternehmen",
+		"contact": "Kontakt",
+		"impressum": "Impressum",
+		"rights": "Alle Rechte vorbehalten."
+	},
+	"theme": {
+		"light": "Zum hellen Modus wechseln",
+		"dark": "Zum dunklen Modus wechseln"
+	},
+	"about": {
+		"title": "Über obraNativa",
+		"subtitle": "Digitale Erlebnisse mit Sorgfalt gestaltet",
+		"mission_title": "Unsere Mission",
+		"mission_text": "obraNativa ist ein kuratierter Marktplatz, der Menschen mit einzigartigen, hochwertigen Produkten von Kunsthandwerkern und Kreativen weltweit verbindet. Wir glauben, dass jeder Einkauf ein Erlebnis sein sollte — vom Moment der Entdeckung über das Auspacken und darüber hinaus. Unser Team prüft jedes Produkt persönlich, um sicherzustellen, dass es unseren Standards für Handwerkskunst, Nachhaltigkeit und Designintegrität entspricht.",
+		"story_title": "Unsere Geschichte",
+		"story_text": "Gegründet im Jahr 2024, entstand obraNativa aus einer einfachen Beobachtung: Die besten Produkte der Welt sind oft hinter algorithmusgetriebenen Marktplätzen verborgen, die Menge über Qualität stellen. Wir haben uns vorgenommen, eine Plattform zu bauen, die diese Gleichung umkehrt — eine, die den Handwerker in den Mittelpunkt stellt, die Geschichten hinter jedem Stück feiert und durchdachtes Kaufen statt Impulskäufe belohnt. Heute umfasst unser Katalog Textilien, Keramik, Lederwaren und digitale Kunst aus über 30 Ländern.",
+		"tech_title": "Anders gebaut",
+		"tech_text": "Diese Plattform wurde mit modernster Webtechnologie entwickelt: SvelteKit für blitzschnelle Performance, modernes CSS mit OKLCH-Farbwissenschaft für ein visuell beeindruckendes Erlebnis und IndexedDB für Offline-First-Zuverlässigkeit. Wir haben bewusst auf externe CSS-Frameworks und aufgeblähte Abhängigkeiten verzichtet — jedes Byte dient einem Zweck.",
+		"values": {
+			"quality_title": "Qualität zuerst",
+			"quality_text": "Jedes Produkt wird sorgfältig auf Qualität und Einzigartigkeit kuratiert.",
+			"pricing_title": "Faire Preise",
+			"pricing_text": "Transparente Preisgestaltung ohne versteckte Kosten.",
+			"community_title": "Gemeinschaft",
+			"community_text": "Aufbau einer Gemeinschaft von Handwerks-Enthusiasten und Kunsthandwerkern."
+		}
+	},
+	"faq": {
+		"title": "Häufig gestellte Fragen",
+		"subtitle": "Alles was Sie wissen müssen",
+		"items": [
+			{
+				"q": "Was ist obraNativa?",
+				"a": "obraNativa ist eine kuratierte E-Commerce-Plattform, die einzigartige, handgefertigte Produkte von Kunsthandwerkern weltweit präsentiert. Wir setzen auf Qualität, Authentizität und faire Preise — jeder Artikel wurde persönlich von unserem Team geprüft."
+			},
+			{
+				"q": "Welche Versandoptionen und Lieferzeiten gibt es?",
+				"a": "Wir bieten Standardversand (5–7 Werktage), Expressversand (2–3 Werktage) und umweltfreundlichen CO₂-neutralen Versand an. Alle Bestellungen über 50 € qualifizieren sich für kostenlosen Standardversand innerhalb der EU. Internationale Bestellungen werden an der Kasse nach Gewicht und Zielort berechnet."
+			},
+			{
+				"q": "Wie ist Ihre Rückgabe- und Erstattungsrichtlinie?",
+				"a": "Wir akzeptieren Rücksendungen innerhalb von 30 Tagen nach Lieferung für Artikel im Originalzustand. Personalisierte Produkte sind von der Rückgabe ausgenommen, es sei denn, sie sind defekt. Erstattungen werden innerhalb von 5 Werktagen nach Erhalt und Prüfung des zurückgesendeten Artikels bearbeitet."
+			},
+			{
+				"q": "Welche Materialien werden in Ihren Produkten verwendet?",
+				"a": "Unsere Kunsthandwerker arbeiten mit einer Vielzahl natürlicher und nachhaltiger Materialien, darunter Bio-Baumwolle, pflanzlich gegerbtes Leder, recycelte Metalle, FSC-zertifiziertes Holz und mundgeblasenes Glas. Jede Produktbeschreibung enthält detaillierte Materialinformationen und Pflegehinweise."
+			},
+			{
+				"q": "Wie funktioniert der Offline-Warenkorb?",
+				"a": "Ihr Warenkorb wird in IndexedDB gespeichert, einer browser-nativen Datenbank, die Daten ohne Server speichert. Das bedeutet, dass Ihre Auswahl Seitenaktualisierungen, Browser-Schließungen und sogar komplette Offline-Sitzungen überlebt."
+			},
+			{
+				"q": "Wie kann ich den Support kontaktieren?",
+				"a": "Sie können uns über das Live-Chat-Widget in der unteren rechten Ecke jeder Seite, über unser Kontaktformular oder per E-Mail an info@obranativa.example.com erreichen. Unser Support-Team antwortet in der Regel innerhalb von 24 Stunden."
+			},
+			{
+				"q": "Welche Zahlungsmethoden werden akzeptiert?",
+				"a": "Dies ist derzeit eine Demo-Anwendung und es werden keine echten Transaktionen verarbeitet. In einer Produktionsversion würden wir Visa, Mastercard, PayPal, Apple Pay, Google Pay und SEPA-Überweisungen für EU-Kunden unterstützen."
+			}
+		]
+	},
+	"impressum": {
+		"title": "Impressum",
+		"subtitle": "Angaben gemäß § 5 TMG",
+		"company_title": "Firmeninformationen",
+		"company_name": "obraNativa",
+		"company_desc": "Demo E-Commerce-Anwendung",
+		"company_address": "Musterstraße 1\n12345 Musterstadt\nDeutschland",
+		"contact_title": "Kontakt",
+		"contact_email": "E-Mail: info@obranativa.example.com",
+		"contact_phone": "Telefon: +49 (0) 123 456 789",
+		"disclaimer_title": "Haftungsausschluss",
+		"disclaimer_p1": "Dies ist eine Demo-Anwendung, die zu Bildungs- und Portfolio-Zwecken erstellt wurde. Es werden keine echten kommerziellen Transaktionen verarbeitet. Produktdaten werden von der Platzi Fake Store API bereitgestellt und stellen keine realen Produkte oder Angebote dar.",
+		"disclaimer_p2": "Alle erwähnten Marken und Markennamen gehören ihren jeweiligen Eigentümern.",
+		"liability_title": "Haftungsbeschränkung",
+		"liability_text": "Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt erstellt. Wir übernehmen jedoch keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte. Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Wir sind jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen."
+	},
+	"privacy": {
+		"title": "Datenschutzerklärung",
+		"subtitle": "Ihre Daten, Ihre Rechte — DSGVO-konform",
+		"overview_title": "Überblick",
+		"overview_text": "Diese Anwendung speichert Daten ausschließlich in Ihrem Browser über IndexedDB. Es werden keine personenbezogenen Daten erhoben, übermittelt oder auf externen Servern gespeichert. Wir nehmen Ihren Datenschutz ernst und haben diese Plattform so transparent wie möglich gestaltet.",
+		"collection_title": "Datenerhebung",
+		"collection_text": "Wir erheben keine personenbezogenen Daten (PII). Die einzigen gespeicherten Daten sind Ihre Warenkorbinhalte und Anzeigeeinstellungen (Design und Sprache), die alle lokal in der IndexedDB und im localStorage Ihres Browsers gespeichert werden. Diese Anwendung setzt keine Cookies.",
+		"api_title": "API-Anfragen an Dritte",
+		"api_text": "Produkt- und Kategoriedaten werden von der Platzi Fake Store API (api.escuelajs.co) abgerufen. Diese Anfragen enthalten keine personenbezogenen Daten. Das Melibo-Chatbot-Widget unterliegt, falls geladen, der eigenen Datenschutzrichtlinie von Melibo.",
+		"rights_title": "Ihre Rechte nach der DSGVO",
+		"rights_text": "Gemäß der EU-Datenschutz-Grundverordnung (DSGVO) haben Sie das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten. Da wir keine personenbezogenen Daten erheben, sind diese Rechte von Natur aus erfüllt. Sie können alle lokal gespeicherten Daten jederzeit löschen, indem Sie die Website-Daten Ihres Browsers löschen.",
+		"changes_title": "Änderungen dieser Richtlinie",
+		"changes_text": "Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Änderungen werden auf dieser Seite mit einem aktualisierten Revisionsdatum dargestellt."
+	}
+}

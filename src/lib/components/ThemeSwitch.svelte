@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { themeMode, themeColor, toggleThemeMode, setColorTheme, type ColorTheme } from '$lib/store/theme.js';
-	import { t } from '$lib/store/i18n.js';
+	import { ts } from '$lib/i18n/index.svelte.js';
 	import Icon from './Icon.svelte';
 
 	let colorOpen = $state(false);
@@ -21,8 +21,8 @@
 	<button
 		onclick={toggleThemeMode}
 		class="theme-btn"
-		aria-label={$themeMode === 'dark' ? $t.theme.light : $t.theme.dark}
-		title={$themeMode === 'dark' ? $t.theme.light : $t.theme.dark}
+		aria-label={$themeMode === 'dark' ? ts('theme.light') : ts('theme.dark')}
+		title={$themeMode === 'dark' ? ts('theme.light') : ts('theme.dark')}
 	>
 		{#if $themeMode === 'dark'}
 			<Icon name="sun" size={20} />

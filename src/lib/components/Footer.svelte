@@ -1,36 +1,37 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import { t } from '$lib/store/i18n.js';
+	import { ts } from '$lib/i18n/index.svelte.js';
 </script>
 
 <footer class="footer">
 	<div class="container footer-inner">
 		<div class="footer-brand">
 			<span class="logo-text">obraNativa</span>
-			<p class="footer-tagline">{$t.footer.tagline}</p>
+			<p class="footer-tagline">{ts('footer.tagline')}</p>
 		</div>
 
 		<nav class="footer-nav">
 			<div class="footer-col">
-				<h4>{$t.footer.shop}</h4>
+				<h4>{ts('footer.shop')}</h4>
 				<ul>
-					<li><a href="{base}/products">{$t.footer.all_products}</a></li>
-					<li><a href="{base}/categories">{$t.nav.categories}</a></li>
+					<li><a href="{base}/products">{ts('footer.all_products')}</a></li>
+					<li><a href="{base}/categories">{ts('nav.categories')}</a></li>
 				</ul>
 			</div>
 			<div class="footer-col">
-				<h4>{$t.footer.company}</h4>
+				<h4>{ts('footer.company')}</h4>
 				<ul>
-					<li><a href="{base}/about">{$t.nav.about}</a></li>
-					<li><a href="{base}/faq">FAQ</a></li>
-					<li><a href="{base}/contacto">{$t.footer.contact}</a></li>
-					<li><a href="{base}/impressum">{$t.footer.impressum}</a></li>
+					<li><a href="{base}/about">{ts('nav.about')}</a></li>
+					<li><a href="{base}/faq">{ts('nav.faq')}</a></li>
+					<li><a href="{base}/contacto">{ts('footer.contact')}</a></li>
+					<li><a href="{base}/impressum">{ts('footer.impressum')}</a></li>
+					<li><a href="{base}/privacy">{ts('privacy.title')}</a></li>
 				</ul>
 			</div>
 		</nav>
 
 		<div class="footer-bottom">
-			<p>&copy; {new Date().getFullYear()} obraNativa. {$t.footer.rights}</p>
+			<p>&copy; {new Date().getFullYear()} obraNativa. {ts('footer.rights')}</p>
 		</div>
 	</div>
 </footer>

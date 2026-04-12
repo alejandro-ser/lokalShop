@@ -1,0 +1,168 @@
+{
+	"seo": {
+		"default_title": "obraNativa — Productos Curados, Arte Nativo",
+		"default_description": "Una experiencia moderna de comercio electrónico con productos curados de artesanos de todo el mundo. Construido con rendimiento y cuidado."
+	},
+	"nav": {
+		"home": "Inicio",
+		"categories": "Categorías",
+		"products": "Productos",
+		"about": "Acerca de",
+		"cart": "Carrito",
+		"profile": "Perfil",
+		"faq": "FAQ",
+		"contact": "Contacto",
+		"impressum": "Aviso Legal"
+	},
+	"home": {
+		"hero_title_1": "Descubre",
+		"hero_title_2": "Arte Nativo",
+		"hero_subtitle": "Una colección curada de productos únicos, construidos con pasión y precisión.",
+		"browse": "Ver Productos",
+		"featured": "Productos Destacados",
+		"view_all": "Ver todos"
+	},
+	"product": {
+		"add_to_cart": "Agregar",
+		"add_cart_full": "Agregar al carrito",
+		"back": "Volver a Productos",
+		"not_found": "Producto no encontrado.",
+		"quantity": "Cantidad",
+		"load_more": "Cargar más",
+		"loading": "Cargando...",
+		"no_products": "No se encontraron productos.",
+		"all_products": "Todos los Productos",
+		"browse_collection": "Explora nuestra colección curada"
+	},
+	"category": {
+		"all": "Todas las Categorías",
+		"explore": "Explora nuestras colecciones curadas",
+		"no_products": "Aún no hay productos en esta categoría."
+	},
+	"cart": {
+		"title": "Carrito de Compras",
+		"empty": "Tu carrito está vacío",
+		"empty_desc": "Descubre productos increíbles y agrégalos a tu carrito.",
+		"summary": "Resumen del Pedido",
+		"items": "Artículos",
+		"shipping": "Envío",
+		"free": "Gratis",
+		"total": "Total",
+		"checkout": "Pagar",
+		"clear": "Vaciar Carrito"
+	},
+	"profile": {
+		"guest": "Usuario Invitado",
+		"welcome": "Bienvenido a obraNativa",
+		"cart_items": "En el Carrito",
+		"cart_total": "Total del Carrito",
+		"orders": "Pedidos",
+		"view_cart": "Ver Carrito",
+		"contact_us": "Contáctanos"
+	},
+	"contact": {
+		"title": "Contáctanos",
+		"subtitle": "Nos encantaría saber de ti",
+		"email": "Correo",
+		"live_chat": "Chat en Vivo",
+		"live_chat_desc": "Usa el widget de chat en la esquina inferior derecha.",
+		"faq_link": "Consulta nuestra página de preguntas frecuentes.",
+		"send_message": "Envíanos un mensaje",
+		"loading_form": "Cargando formulario..."
+	},
+	"footer": {
+		"tagline": "Productos curados, arte nativo.",
+		"shop": "Tienda",
+		"all_products": "Todos los Productos",
+		"company": "Empresa",
+		"contact": "Contacto",
+		"impressum": "Aviso Legal",
+		"rights": "Todos los derechos reservados."
+	},
+	"theme": {
+		"light": "Cambiar a modo claro",
+		"dark": "Cambiar a modo oscuro"
+	},
+	"about": {
+		"title": "Acerca de obraNativa",
+		"subtitle": "Creando experiencias digitales con cuidado",
+		"mission_title": "Nuestra Misión",
+		"mission_text": "obraNativa es un mercado curado dedicado a conectar personas con productos únicos y de alta calidad de artesanos y creadores de todo el mundo. Creemos que cada compra debe ser una experiencia — desde el momento del descubrimiento hasta el desempaquetado y más allá. Nuestro equipo revisa personalmente cada producto para asegurar que cumple con nuestros estándares de artesanía, sostenibilidad e integridad de diseño.",
+		"story_title": "Nuestra Historia",
+		"story_text": "Fundada en 2024, obraNativa nació de una observación simple: los mejores productos del mundo a menudo están ocultos detrás de mercados impulsados por algoritmos que priorizan el volumen sobre la calidad. Nos propusimos construir una plataforma que invierte esa ecuación — una que pone al artesano en el centro, celebra las historias detrás de cada pieza y recompensa la compra reflexiva sobre la compra impulsiva. Hoy, nuestro catálogo abarca textiles, cerámica, artículos de cuero y arte digital de más de 30 países.",
+		"tech_title": "Construido Diferente",
+		"tech_text": "Esta plataforma está construida con tecnología web de vanguardia: SvelteKit para un rendimiento ultrarrápido, CSS moderno con ciencia del color OKLCH para una experiencia visualmente impresionante, e IndexedDB para fiabilidad offline-first. Elegimos cero frameworks CSS externos y ninguna dependencia inflada — cada byte tiene un propósito.",
+		"values": {
+			"quality_title": "Calidad Primero",
+			"quality_text": "Cada producto es cuidadosamente curado por su calidad y singularidad.",
+			"pricing_title": "Precios Justos",
+			"pricing_text": "Precios transparentes sin costos ocultos ni sorpresas.",
+			"community_title": "Comunidad",
+			"community_text": "Construyendo una comunidad de entusiastas del arte y artesanos."
+		}
+	},
+	"faq": {
+		"title": "Preguntas Frecuentes",
+		"subtitle": "Todo lo que necesitas saber",
+		"items": [
+			{
+				"q": "¿Qué es obraNativa?",
+				"a": "obraNativa es una plataforma curada de comercio electrónico que muestra productos únicos y artesanales de creadores de todo el mundo. Nos enfocamos en calidad, autenticidad y precios justos — cada artículo ha sido revisado personalmente por nuestro equipo."
+			},
+			{
+				"q": "¿Cuáles son las opciones de envío y tiempos de entrega?",
+				"a": "Ofrecemos envío estándar (5–7 días hábiles), envío exprés (2–3 días hábiles) y envío ecológico con compensación de carbono. Todos los pedidos superiores a 50 € califican para envío estándar gratuito dentro de la UE. Los pedidos internacionales se calculan al finalizar la compra según peso y destino."
+			},
+			{
+				"q": "¿Cuál es la política de devoluciones y reembolsos?",
+				"a": "Aceptamos devoluciones dentro de los 30 días posteriores a la entrega para artículos en su condición original. Los productos personalizados están exentos de devoluciones a menos que sean defectuosos. Los reembolsos se procesan dentro de 5 días hábiles después de recibir e inspeccionar el artículo devuelto."
+			},
+			{
+				"q": "¿Qué materiales se utilizan en sus productos?",
+				"a": "Nuestros artesanos trabajan con una amplia gama de materiales naturales y sostenibles, incluyendo algodón orgánico, cuero curtido vegetal, metales reciclados, madera certificada FSC y vidrio soplado a mano. Cada listado de producto incluye información detallada de materiales e instrucciones de cuidado."
+			},
+			{
+				"q": "¿Cómo funciona el carrito sin conexión?",
+				"a": "Tu carrito se almacena en IndexedDB, una base de datos nativa del navegador que persiste datos sin requerir un servidor. Esto significa que tus selecciones sobreviven a recargas de página, cierres del navegador e incluso sesiones completamente sin conexión."
+			},
+			{
+				"q": "¿Cómo puedo contactar al soporte?",
+				"a": "Puedes comunicarte a través del widget de chat en la esquina inferior derecha, a través de nuestro formulario de contacto, o por correo electrónico a info@obranativa.example.com. Nuestro equipo generalmente responde dentro de las 24 horas."
+			},
+			{
+				"q": "¿Qué métodos de pago se aceptan?",
+				"a": "Esta es actualmente una aplicación de demostración y no se procesan transacciones reales. En una versión de producción, aceptaríamos Visa, Mastercard, PayPal, Apple Pay, Google Pay y transferencias bancarias SEPA para clientes de la UE."
+			}
+		]
+	},
+	"impressum": {
+		"title": "Aviso Legal",
+		"subtitle": "Información legal según § 5 TMG",
+		"company_title": "Información de la Empresa",
+		"company_name": "obraNativa",
+		"company_desc": "Aplicación Demo de Comercio Electrónico",
+		"company_address": "Musterstraße 1\n12345 Musterstadt\nAlemania",
+		"contact_title": "Contacto",
+		"contact_email": "Email: info@obranativa.example.com",
+		"contact_phone": "Teléfono: +49 (0) 123 456 789",
+		"disclaimer_title": "Descargo de Responsabilidad",
+		"disclaimer_p1": "Esta es una aplicación de demostración creada con fines educativos y de portafolio. No se procesan transacciones comerciales reales. Los datos de productos son proporcionados por la API Platzi Fake Store y no representan productos u ofertas reales.",
+		"disclaimer_p2": "Todas las marcas comerciales y nombres de marca mencionados pertenecen a sus respectivos propietarios.",
+		"liability_title": "Limitación de Responsabilidad",
+		"liability_text": "Los contenidos de este sitio web se crean con el mayor cuidado posible. Sin embargo, no podemos garantizar la exactitud, integridad o actualidad del contenido. Como proveedor de servicios, somos responsables de nuestro propio contenido en estas páginas según las leyes generales. Sin embargo, no estamos obligados a supervisar la información transmitida o almacenada de terceros."
+	},
+	"privacy": {
+		"title": "Política de Privacidad",
+		"subtitle": "Tus datos, tus derechos — Conforme al RGPD",
+		"overview_title": "Resumen",
+		"overview_text": "Esta aplicación almacena datos exclusivamente en tu navegador usando IndexedDB. No se recopilan, transmiten ni almacenan datos personales en ningún servidor externo. Nos tomamos tu privacidad en serio y hemos diseñado esta plataforma para ser lo más transparente posible.",
+		"collection_title": "Recopilación de Datos",
+		"collection_text": "No recopilamos ninguna información de identificación personal (PII). Los únicos datos almacenados son el contenido de tu carrito y preferencias de visualización (tema e idioma), todo almacenado localmente en IndexedDB y localStorage de tu navegador. Esta aplicación no establece cookies.",
+		"api_title": "Solicitudes API a Terceros",
+		"api_text": "Los datos de productos y categorías se obtienen de la API Platzi Fake Store (api.escuelajs.co). Estas solicitudes no incluyen información personal. El widget de chatbot Melibo, si se carga, se rige por su propia política de privacidad.",
+		"rights_title": "Tus Derechos bajo el RGPD",
+		"rights_text": "Bajo el Reglamento General de Protección de Datos (RGPD) de la UE, tienes derecho de acceso, rectificación, supresión, limitación del tratamiento, portabilidad de datos y oposición al tratamiento de tus datos personales. Dado que no recopilamos datos personales, estos derechos se satisfacen inherentemente. Puedes eliminar todos los datos almacenados localmente en cualquier momento borrando los datos del sitio de tu navegador.",
+		"changes_title": "Cambios en Esta Política",
+		"changes_text": "Podemos actualizar esta política de privacidad de vez en cuando. Cualquier cambio se reflejará en esta página con una fecha de revisión actualizada."
+	}
+}

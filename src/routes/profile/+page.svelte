@@ -4,13 +4,13 @@
 	import Button from '$lib/components/Button.svelte';
 	import { base } from '$app/paths';
 	import { cart } from '$lib/store/cart.js';
-	import { t } from '$lib/store/i18n.js';
+	import { ts } from '$lib/i18n/index.svelte.js';
 
 	let totalSpent = $derived($cart.reduce((sum, i) => sum + i.price * i.qty, 0));
 </script>
 
 <svelte:head>
-	<title>{$t.nav.profile} — obraNativa</title>
+	<title>{ts('nav.profile')} — obraNativa</title>
 </svelte:head>
 
 <section class="section">
@@ -21,38 +21,38 @@
 					<Icon name="user" size={48} />
 				</div>
 				<div>
-					<h1 class="page-title">{$t.profile.guest}</h1>
-					<p class="page-subtitle">{$t.profile.welcome}</p>
+					<h1 class="page-title">{ts('profile.guest')}</h1>
+					<p class="page-subtitle">{ts('profile.welcome')}</p>
 				</div>
 			</div>
 
 			<div class="stats-grid">
 				<div class="stat-card">
 					<span class="stat-value">{$cart.length}</span>
-					<span class="stat-label">{$t.profile.cart_items}</span>
+					<span class="stat-label">{ts('profile.cart_items')}</span>
 				</div>
 				<div class="stat-card">
 					<span class="stat-value">${totalSpent.toFixed(2)}</span>
-					<span class="stat-label">{$t.profile.cart_total}</span>
+					<span class="stat-label">{ts('profile.cart_total')}</span>
 				</div>
 				<div class="stat-card">
 					<span class="stat-value">0</span>
-					<span class="stat-label">{$t.profile.orders}</span>
+					<span class="stat-label">{ts('profile.orders')}</span>
 				</div>
 			</div>
 
 			<div class="profile-links">
 				<Button href="{base}/cart" variant="secondary" size="md">
 					<Icon name="shopping-cart" size={18} />
-					{$t.profile.view_cart}
+					{ts('profile.view_cart')}
 				</Button>
 				<Button href="{base}/products" variant="secondary" size="md">
 					<Icon name="tag" size={18} />
-					{$t.home.browse}
+					{ts('home.browse')}
 				</Button>
 				<Button href="{base}/contacto" variant="secondary" size="md">
 					<Icon name="message-circle" size={18} />
-					{$t.profile.contact_us}
+					{ts('profile.contact_us')}
 				</Button>
 			</div>
 		</GlassContainer>

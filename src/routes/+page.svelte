@@ -7,7 +7,7 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import GlassContainer from '$lib/components/GlassContainer.svelte';
 	import { getProducts, getCategories } from '$lib/services/api.js';
-	import { t } from '$lib/store/i18n.js';
+	import { ts } from '$lib/i18n/index.svelte.js';
 	import type { Product, Category } from '$lib/types/api.js';
 
 	let products = $state.raw<Product[]>([]);
@@ -28,7 +28,7 @@
 </script>
 
 <svelte:head>
-	<title>obraNativa — {$t.home.hero_title_2}</title>
+	<title>obraNativa — {ts('home.hero_title_2')}</title>
 </svelte:head>
 
 <section class="hero section">
@@ -36,18 +36,18 @@
 		<GlassContainer>
 			<div class="hero-content">
 				<h1 class="hero-title">
-					{$t.home.hero_title_1}<br />
-					<span class="gradient-text">{$t.home.hero_title_2}</span>
+					{ts('home.hero_title_1')}<br />
+					<span class="gradient-text">{ts('home.hero_title_2')}</span>
 				</h1>
-				<p class="hero-subtitle">{$t.home.hero_subtitle}</p>
+				<p class="hero-subtitle">{ts('home.hero_subtitle')}</p>
 				<div class="hero-actions">
 					<Button href="{base}/products" variant="primary" size="lg">
 						<Icon name="tag" size={20} />
-						{$t.home.browse}
+						{ts('home.browse')}
 					</Button>
 					<Button href="{base}/categories" variant="secondary" size="lg">
 						<Icon name="grid" size={20} />
-						{$t.nav.categories}
+						{ts('nav.categories')}
 					</Button>
 				</div>
 			</div>
@@ -58,9 +58,9 @@
 <section class="section">
 	<div class="container">
 		<div class="section-header">
-			<h2 class="page-title">{$t.nav.categories}</h2>
+			<h2 class="page-title">{ts('nav.categories')}</h2>
 			<Button href="{base}/categories" variant="ghost" size="sm">
-				{$t.home.view_all} <Icon name="chevron-right" size={16} />
+				{ts('home.view_all')} <Icon name="chevron-right" size={16} />
 			</Button>
 		</div>
 		{#if loading}
@@ -82,9 +82,9 @@
 <section class="section">
 	<div class="container">
 		<div class="section-header">
-			<h2 class="page-title">{$t.home.featured}</h2>
+			<h2 class="page-title">{ts('home.featured')}</h2>
 			<Button href="{base}/products" variant="ghost" size="sm">
-				{$t.home.view_all} <Icon name="chevron-right" size={16} />
+				{ts('home.view_all')} <Icon name="chevron-right" size={16} />
 			</Button>
 		</div>
 		{#if loading}

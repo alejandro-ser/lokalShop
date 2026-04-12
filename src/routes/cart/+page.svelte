@@ -5,7 +5,7 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import GlassContainer from '$lib/components/GlassContainer.svelte';
 	import { cart } from '$lib/store/cart.js';
-	import { t } from '$lib/store/i18n.js';
+	import { ts } from '$lib/i18n/index.svelte.js';
 
 	let total = $derived($cart.reduce((sum, i) => sum + i.price * i.qty, 0));
 	let itemCount = $derived($cart.reduce((sum, i) => sum + i.qty, 0));
@@ -22,21 +22,21 @@
 </script>
 
 <svelte:head>
-	<title>{$t.cart.title} ({itemCount}) — obraNativa</title>
+	<title>{ts('cart.title')} ({itemCount}) — obraNativa</title>
 </svelte:head>
 
 <section class="section">
 	<div class="container">
-		<h1 class="page-title">{$t.cart.title}</h1>
+		<h1 class="page-title">{ts('cart.title')}</h1>
 
 		{#if $cart.length === 0}
 			<div class="empty-state">
 				<Icon name="shopping-cart" size={64} />
-				<h2>{$t.cart.empty}</h2>
-				<p>{$t.cart.empty_desc}</p>
+				<h2>{ts('cart.empty')}</h2>
+				<p>{ts('cart.empty_desc')}</p>
 				<Button href="{base}/products" variant="primary" size="lg">
 					<Icon name="tag" size={20} />
-					{$t.home.browse}
+					{ts('home.browse')}
 				</Button>
 			</div>
 		{:else}
@@ -84,26 +84,26 @@
 
 				<aside class="cart-summary">
 					<GlassContainer>
-						<h2 class="summary-title">{$t.cart.summary}</h2>
+						<h2 class="summary-title">{ts('cart.summary')}</h2>
 						<div class="summary-row">
-							<span>{$t.cart.items} ({itemCount})</span>
+							<span>{ts('cart.items')} ({itemCount})</span>
 							<span>${total.toFixed(2)}</span>
 						</div>
 						<div class="summary-row">
-							<span>{$t.cart.shipping}</span>
-							<span class="free">{$t.cart.free}</span>
+							<span>{ts('cart.shipping')}</span>
+							<span class="free">{ts('cart.free')}</span>
 						</div>
 						<hr />
 						<div class="summary-row total">
-							<span>{$t.cart.total}</span>
+							<span>{ts('cart.total')}</span>
 							<span>${total.toFixed(2)}</span>
 						</div>
 						<Button variant="primary" size="lg" onclick={() => alert('Checkout coming soon!')}>
-							{$t.cart.checkout}
+							{ts('cart.checkout')}
 						</Button>
 						<Button variant="ghost" size="sm" onclick={() => cart.clearCart()}>
 							<Icon name="trash" size={14} />
-							{$t.cart.clear}
+							{ts('cart.clear')}
 						</Button>
 					</GlassContainer>
 				</aside>
