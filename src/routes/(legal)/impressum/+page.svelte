@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>{ts('impressum.title')} — obraNativa</title>
+	<title>{ts('impressum.title')} — LokalShop</title>
 </svelte:head>
 
 <section class="section">

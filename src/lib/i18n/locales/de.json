@@ -1,6 +1,6 @@
 {
 	"seo": {
-		"default_title": "obraNativa — Kuratierte Produkte, Native Handwerkskunst",
+		"default_title": "LokalShop — Kuratierte Produkte, Native Handwerkskunst",
 		"default_description": "Ein modernes E-Commerce-Erlebnis mit kuratierten Produkten von Kunsthandwerkern weltweit. Entwickelt mit Leistung und Sorgfalt."
 	},
 	"nav": {
@@ -58,7 +58,7 @@
 	},
 	"profile": {
 		"guest": "Gastbenutzer",
-		"welcome": "Willkommen bei obraNativa",
+		"welcome": "Willkommen bei LokalShop",
 		"cart_items": "Warenkorb",
 		"cart_total": "Gesamtsumme",
 		"orders": "Bestellungen",
@@ -133,12 +133,12 @@
 		"dark": "Zum dunklen Modus wechseln"
 	},
 	"about": {
-		"title": "Über obraNativa",
+		"title": "Über LokalShop",
 		"subtitle": "Digitale Erlebnisse mit Sorgfalt gestaltet",
 		"mission_title": "Unsere Mission",
-		"mission_text": "obraNativa ist ein kuratierter Marktplatz, der Menschen mit einzigartigen, hochwertigen Produkten von Kunsthandwerkern und Kreativen weltweit verbindet. Wir glauben, dass jeder Einkauf ein Erlebnis sein sollte — vom Moment der Entdeckung über das Auspacken und darüber hinaus. Unser Team prüft jedes Produkt persönlich, um sicherzustellen, dass es unseren Standards für Handwerkskunst, Nachhaltigkeit und Designintegrität entspricht.",
+		"mission_text": "LokalShop ist ein kuratierter Marktplatz, der Menschen mit einzigartigen, hochwertigen Produkten von Kunsthandwerkern und Kreativen weltweit verbindet. Wir glauben, dass jeder Einkauf ein Erlebnis sein sollte — vom Moment der Entdeckung über das Auspacken und darüber hinaus. Unser Team prüft jedes Produkt persönlich, um sicherzustellen, dass es unseren Standards für Handwerkskunst, Nachhaltigkeit und Designintegrität entspricht.",
 		"story_title": "Unsere Geschichte",
-		"story_text": "Gegründet im Jahr 2024, entstand obraNativa aus einer einfachen Beobachtung: Die besten Produkte der Welt sind oft hinter algorithmusgetriebenen Marktplätzen verborgen, die Menge über Qualität stellen. Wir haben uns vorgenommen, eine Plattform zu bauen, die diese Gleichung umkehrt — eine, die den Handwerker in den Mittelpunkt stellt, die Geschichten hinter jedem Stück feiert und durchdachtes Kaufen statt Impulskäufe belohnt. Heute umfasst unser Katalog Textilien, Keramik, Lederwaren und digitale Kunst aus über 30 Ländern.",
+		"story_text": "Gegründet im Jahr 2024, entstand LokalShop aus einer einfachen Beobachtung: Die besten Produkte der Welt sind oft hinter algorithmusgetriebenen Marktplätzen verborgen, die Menge über Qualität stellen. Wir haben uns vorgenommen, eine Plattform zu bauen, die diese Gleichung umkehrt — eine, die den Handwerker in den Mittelpunkt stellt, die Geschichten hinter jedem Stück feiert und durchdachtes Kaufen statt Impulskäufe belohnt. Heute umfasst unser Katalog Textilien, Keramik, Lederwaren und digitale Kunst aus über 30 Ländern.",
 		"tech_title": "Anders gebaut",
 		"tech_text": "Diese Plattform wurde mit modernster Webtechnologie entwickelt: SvelteKit für blitzschnelle Performance, modernes CSS mit OKLCH-Farbwissenschaft für ein visuell beeindruckendes Erlebnis und IndexedDB für Offline-First-Zuverlässigkeit. Wir haben bewusst auf externe CSS-Frameworks und aufgeblähte Abhängigkeiten verzichtet — jedes Byte dient einem Zweck.",
 		"values": {
@@ -155,8 +155,8 @@
 		"subtitle": "Alles was Sie wissen müssen",
 		"items": [
 			{
-				"q": "Was ist obraNativa?",
-				"a": "obraNativa ist eine kuratierte E-Commerce-Plattform, die einzigartige, handgefertigte Produkte von Kunsthandwerkern weltweit präsentiert. Wir setzen auf Qualität, Authentizität und faire Preise — jeder Artikel wurde persönlich von unserem Team geprüft."
+				"q": "Was ist LokalShop?",
+				"a": "LokalShop ist eine kuratierte E-Commerce-Plattform, die einzigartige, handgefertigte Produkte von Kunsthandwerkern weltweit präsentiert. Wir setzen auf Qualität, Authentizität und faire Preise — jeder Artikel wurde persönlich von unserem Team geprüft."
 			},
 			{
 				"q": "Welche Versandoptionen und Lieferzeiten gibt es?",
@@ -176,7 +176,7 @@
 			},
 			{
 				"q": "Wie kann ich den Support kontaktieren?",
-				"a": "Sie können uns über das Live-Chat-Widget in der unteren rechten Ecke jeder Seite, über unser Kontaktformular oder per E-Mail an info@obranativa.example.com erreichen. Unser Support-Team antwortet in der Regel innerhalb von 24 Stunden."
+				"a": "Sie können uns über das Live-Chat-Widget in der unteren rechten Ecke jeder Seite, über unser Kontaktformular oder per E-Mail an info@lokalshop.example.com erreichen. Unser Support-Team antwortet in der Regel innerhalb von 24 Stunden."
 			},
 			{
 				"q": "Welche Zahlungsmethoden werden akzeptiert?",
@@ -188,11 +188,11 @@
 		"title": "Impressum",
 		"subtitle": "Angaben gemäß § 5 TMG",
 		"company_title": "Firmeninformationen",
-		"company_name": "obraNativa",
+		"company_name": "LokalShop",
 		"company_desc": "Demo E-Commerce-Anwendung",
 		"company_address": "Musterstraße 1\n12345 Musterstadt\nDeutschland",
 		"contact_title": "Kontakt",
-		"contact_email": "E-Mail: info@obranativa.example.com",
+		"contact_email": "E-Mail: info@lokalshop.example.com",
 		"contact_phone": "Telefon: +49 (0) 123 456 789",
 		"disclaimer_title": "Haftungsausschluss",
 		"disclaimer_p1": "Dies ist eine Demo-Anwendung, die zu Bildungs- und Portfolio-Zwecken erstellt wurde. Es werden keine echten kommerziellen Transaktionen verarbeitet. Produktdaten werden von der Platzi Fake Store API bereitgestellt und stellen keine realen Produkte oder Angebote dar.",

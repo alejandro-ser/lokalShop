@@ -1,0 +1,61 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Build
+        env:
+          BASE_PATH: '/${{ github.event.repository.name }}'
+          PUBLIC_API_BASE: ${{ secrets.PUBLIC_API_BASE }}
+          PUBLIC_SUPABASE_URL: ${{ secrets.PUBLIC_SUPABASE_URL }}
+          PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY }}
+          PUBLIC_ADMIN_HASH: ${{ secrets.PUBLIC_ADMIN_HASH }}
+          PUBLIC_MELIBO_WIDGET_KEY: ${{ secrets.PUBLIC_MELIBO_WIDGET_KEY }}
+          PUBLIC_MELIBO_CONTACT_KEY: ${{ secrets.PUBLIC_MELIBO_CONTACT_KEY }}
+        run: pnpm build
+
+      - name: Ensure SPA fallback
+        run: |
+          if [ ! -f build/404.html ]; then
+            cp build/index.html build/404.html
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

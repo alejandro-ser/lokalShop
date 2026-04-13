@@ -71,7 +71,7 @@
 </script>
 
 <svelte:head>
-	<title>{ts('nav.profile')} — obraNativa</title>
+	<title>{ts('nav.profile')} — LokalShop</title>
 </svelte:head>
 
 <section class="section">

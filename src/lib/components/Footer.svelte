@@ -6,7 +6,7 @@
 <footer class="footer">
 	<div class="container footer-inner">
 		<div class="footer-brand">
-			<span class="logo-text">obraNativa</span>
+			<span class="logo-text">LokalShop</span>
 			<p class="footer-tagline">{ts('footer.tagline')}</p>
 		</div>
 
@@ -31,7 +31,7 @@
 		</nav>
 
 		<div class="footer-bottom">
-			<p>&copy; {new Date().getFullYear()} obraNativa. {ts('footer.rights')}</p>
+			<p>&copy; {new Date().getFullYear()} LokalShop. {ts('footer.rights')}</p>
 		</div>
 	</div>
 </footer>

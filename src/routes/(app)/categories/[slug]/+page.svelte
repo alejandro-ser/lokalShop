@@ -50,7 +50,7 @@
 </script>
 
 <svelte:head>
-	<title>{category?.name || 'Category'} — obraNativa</title>
+	<title>{category?.name || 'Category'} — LokalShop</title>
 </svelte:head>
 
 <section class="section">

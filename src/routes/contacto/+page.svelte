@@ -41,7 +41,7 @@
 </script>
 
 <svelte:head>
-	<title>{ts('contact.title')} — obraNativa</title>
+	<title>{ts('contact.title')} — LokalShop</title>
 </svelte:head>
 
 <section class="section">
@@ -56,7 +56,7 @@
 						<Icon name="mail" size={24} />
 						<div>
 							<h3>{ts('contact.email')}</h3>
-							<p>info@obranativa.example.com</p>
+							<p>info@lokalshop.example.com</p>
 						</div>
 					</div>
 					<div class="info-item">

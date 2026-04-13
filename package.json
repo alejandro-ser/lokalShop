@@ -1,7 +1,11 @@
 {
-	"name": "obranativa",
+	"name": "lokalshop",
 	"private": true,
 	"version": "0.0.1",
+	"engines": {
+		"node": "25.9.0"
+	},
+	"packageManager": "pnpm@10.33.0",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",

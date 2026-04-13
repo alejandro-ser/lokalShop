@@ -20,7 +20,7 @@
 </script>
 
 <svelte:head>
-	<title>{ts('nav.categories')} — obraNativa</title>
+	<title>{ts('nav.categories')} — LokalShop</title>
 </svelte:head>
 
 <section class="section">

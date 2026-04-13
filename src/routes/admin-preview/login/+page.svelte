@@ -42,7 +42,7 @@
 </script>
 
 <svelte:head>
-	<title>Admin Login — obraNativa</title>
+	<title>Admin Login — LokalShop</title>
 </svelte:head>
 
 <section class="section">

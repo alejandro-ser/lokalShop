@@ -1,6 +1,6 @@
 {
 	"seo": {
-		"default_title": "obraNativa — Productos Curados, Arte Nativo",
+		"default_title": "LokalShop — Productos Curados, Arte Nativo",
 		"default_description": "Una experiencia moderna de comercio electrónico con productos curados de artesanos de todo el mundo. Construido con rendimiento y cuidado."
 	},
 	"nav": {
@@ -58,7 +58,7 @@
 	},
 	"profile": {
 		"guest": "Usuario Invitado",
-		"welcome": "Bienvenido a obraNativa",
+		"welcome": "Bienvenido a LokalShop",
 		"cart_items": "En el Carrito",
 		"cart_total": "Total del Carrito",
 		"orders": "Pedidos",
@@ -133,12 +133,12 @@
 		"dark": "Cambiar a modo oscuro"
 	},
 	"about": {
-		"title": "Acerca de obraNativa",
+		"title": "Acerca de LokalShop",
 		"subtitle": "Creando experiencias digitales con cuidado",
 		"mission_title": "Nuestra Misión",
-		"mission_text": "obraNativa es un mercado curado dedicado a conectar personas con productos únicos y de alta calidad de artesanos y creadores de todo el mundo. Creemos que cada compra debe ser una experiencia — desde el momento del descubrimiento hasta el desempaquetado y más allá. Nuestro equipo revisa personalmente cada producto para asegurar que cumple con nuestros estándares de artesanía, sostenibilidad e integridad de diseño.",
+		"mission_text": "LokalShop es un mercado curado dedicado a conectar personas con productos únicos y de alta calidad de artesanos y creadores de todo el mundo. Creemos que cada compra debe ser una experiencia — desde el momento del descubrimiento hasta el desempaquetado y más allá. Nuestro equipo revisa personalmente cada producto para asegurar que cumple con nuestros estándares de artesanía, sostenibilidad e integridad de diseño.",
 		"story_title": "Nuestra Historia",
-		"story_text": "Fundada en 2024, obraNativa nació de una observación simple: los mejores productos del mundo a menudo están ocultos detrás de mercados impulsados por algoritmos que priorizan el volumen sobre la calidad. Nos propusimos construir una plataforma que invierte esa ecuación — una que pone al artesano en el centro, celebra las historias detrás de cada pieza y recompensa la compra reflexiva sobre la compra impulsiva. Hoy, nuestro catálogo abarca textiles, cerámica, artículos de cuero y arte digital de más de 30 países.",
+		"story_text": "Fundada en 2024, LokalShop nació de una observación simple: los mejores productos del mundo a menudo están ocultos detrás de mercados impulsados por algoritmos que priorizan el volumen sobre la calidad. Nos propusimos construir una plataforma que invierte esa ecuación — una que pone al artesano en el centro, celebra las historias detrás de cada pieza y recompensa la compra reflexiva sobre la compra impulsiva. Hoy, nuestro catálogo abarca textiles, cerámica, artículos de cuero y arte digital de más de 30 países.",
 		"tech_title": "Construido Diferente",
 		"tech_text": "Esta plataforma está construida con tecnología web de vanguardia: SvelteKit para un rendimiento ultrarrápido, CSS moderno con ciencia del color OKLCH para una experiencia visualmente impresionante, e IndexedDB para fiabilidad offline-first. Elegimos cero frameworks CSS externos y ninguna dependencia inflada — cada byte tiene un propósito.",
 		"values": {
@@ -155,8 +155,8 @@
 		"subtitle": "Todo lo que necesitas saber",
 		"items": [
 			{
-				"q": "¿Qué es obraNativa?",
-				"a": "obraNativa es una plataforma curada de comercio electrónico que muestra productos únicos y artesanales de creadores de todo el mundo. Nos enfocamos en calidad, autenticidad y precios justos — cada artículo ha sido revisado personalmente por nuestro equipo."
+				"q": "¿Qué es LokalShop?",
+				"a": "LokalShop es una plataforma curada de comercio electrónico que muestra productos únicos y artesanales de creadores de todo el mundo. Nos enfocamos en calidad, autenticidad y precios justos — cada artículo ha sido revisado personalmente por nuestro equipo."
 			},
 			{
 				"q": "¿Cuáles son las opciones de envío y tiempos de entrega?",
@@ -176,7 +176,7 @@
 			},
 			{
 				"q": "¿Cómo puedo contactar al soporte?",
-				"a": "Puedes comunicarte a través del widget de chat en la esquina inferior derecha, a través de nuestro formulario de contacto, o por correo electrónico a info@obranativa.example.com. Nuestro equipo generalmente responde dentro de las 24 horas."
+				"a": "Puedes comunicarte a través del widget de chat en la esquina inferior derecha, a través de nuestro formulario de contacto, o por correo electrónico a info@lokalshop.example.com. Nuestro equipo generalmente responde dentro de las 24 horas."
 			},
 			{
 				"q": "¿Qué métodos de pago se aceptan?",
@@ -188,11 +188,11 @@
 		"title": "Aviso Legal",
 		"subtitle": "Información legal según § 5 TMG",
 		"company_title": "Información de la Empresa",
-		"company_name": "obraNativa",
+		"company_name": "LokalShop",
 		"company_desc": "Aplicación Demo de Comercio Electrónico",
 		"company_address": "Musterstraße 1\n12345 Musterstadt\nAlemania",
 		"contact_title": "Contacto",
-		"contact_email": "Email: info@obranativa.example.com",
+		"contact_email": "Email: info@lokalshop.example.com",
 		"contact_phone": "Teléfono: +49 (0) 123 456 789",
 		"disclaimer_title": "Descargo de Responsabilidad",
 		"disclaimer_p1": "Esta es una aplicación de demostración creada con fines educativos y de portafolio. No se procesan transacciones comerciales reales. Los datos de productos son proporcionados por la API Platzi Fake Store y no representan productos u ofertas reales.",

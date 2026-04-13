@@ -1,6 +1,6 @@
 import type { CacheEntry } from '$lib/types/api.js';
 
-const DB_NAME = 'obraNativa';
+const DB_NAME = 'lokalShop';
 const DB_VERSION = 2;
 
 const STORES: Record<string, IDBObjectStoreParameters> = {

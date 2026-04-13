@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>{ts('privacy.title')} — obraNativa</title>
+	<title>{ts('privacy.title')} — LokalShop</title>
 </svelte:head>
 
 <section class="section">

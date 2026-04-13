@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>{ts('about.title')} — obraNativa</title>
+	<title>{ts('about.title')} — LokalShop</title>
 </svelte:head>
 
 <section class="section">

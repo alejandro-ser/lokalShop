@@ -47,7 +47,7 @@
 </script>
 
 <svelte:head>
-	<title>{ts('cart.title')} ({itemCount}) — obraNativa</title>
+	<title>{ts('cart.title')} ({itemCount}) — LokalShop</title>
 </svelte:head>
 
 <section class="section">

@@ -53,7 +53,7 @@
 </script>
 
 <svelte:head>
-	<title>{product?.title || 'Product'} — obraNativa</title>
+	<title>{product?.title || 'Product'} — LokalShop</title>
 </svelte:head>
 
 <section class="section">

@@ -27,7 +27,7 @@
 <header class="navbar glass">
 	<nav class="nav-inner container">
 		<a href="{base}/" class="logo" onclick={closeMenu}>
-			<span class="logo-text">obraNativa</span>
+			<span class="logo-text">LokalShop</span>
 		</a>
 
 		<ul class="nav-links" class:open={menuOpen}>

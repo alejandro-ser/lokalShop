@@ -28,7 +28,7 @@
 </script>
 
 <svelte:head>
-	<title>obraNativa — {ts('home.hero_title_2')}</title>
+	<title>LokalShop — {ts('home.hero_title_2')}</title>
 </svelte:head>
 
 <section class="hero section">

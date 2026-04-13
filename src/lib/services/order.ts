@@ -101,12 +101,13 @@ export async function getOrdersByEmail(email: string): Promise<Order[]> {
 export async function deleteOrder(id: string): Promise<void> {
 	await del('orders', id);
 
-	const { error } = await supabase
+	const { error, count } = await supabase
 		.from('orders')
-		.delete()
+		.delete({ count: 'exact' })
 		.eq('id', id);
 
 	if (error) throw new Error(error.message);
+	if (count === 0) console.warn('[order] Delete matched 0 rows — check RLS policies');
 }
 
 export async function updateOrderStatus(
@@ -120,10 +121,14 @@ export async function updateOrderStatus(
 		await put('orders', { ...localOrder, status, updated_at: now });
 	}
 
-	const { error } = await supabase
+	const { error, data } = await supabase
 		.from('orders')
 		.update({ status, updated_at: now })
-		.eq('id', id);
+		.eq('id', id)
+		.select('id');
 
 	if (error) throw new Error(error.message);
+	if (!data || data.length === 0) {
+		throw new Error('Update blocked — check Supabase RLS policies for UPDATE on "orders" table');
+	}
 }
